@@ -1,6 +1,5 @@
 'use client'
 
-import Image from "next/image";
 import {
   Navbar,
   NavbarContent, 
@@ -10,11 +9,11 @@ import {
 
 export default function Home() {
   return (
-    <Navbar className="bg-gray-800 text-white p-4 flex justify-between items-center">
+    <Navbar className="bg-gray-800 p-4 flex justify-between items-center">
       <NavbarContent className="text-2xl font-bold">Logo</NavbarContent>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="/">
             Features
           </Link>
         </NavbarItem>
