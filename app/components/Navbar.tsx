@@ -6,41 +6,36 @@ import {
   NavbarItem, 
   Link
 } from "@heroui/react";
-import Stefanwurpel from '../public/Stefanwurpel.png';
-import { px } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 export default function Home() {
+  const pathname = usePathname();
+
+  const linkBase = "flex items-center justify-center h-12 px-4 border rounded-xl transition-all";
+  const active = "bg-gray-500 text-gray-100";
+  const inactive = "hover:bg-gray-700";
+
   return (
     <Navbar className="bg-gray-800 p-4 flex justify-between items-center">
       <NavbarContent className="text-2xl font-bold">
         <img src={'/Stefanwurpel.png'} alt="Stefan Wurpel" width={100} height={100} className="rounded-xl border border-yellow-400"/>
         </NavbarContent>
       <NavbarContent className="hidden sm:flex gap-4 " justify="center">
-        <NavbarItem className="p-3 border">
           <Link color="foreground" href="/">
-            Home
+            <NavbarItem isActive={pathname === "/"} className={`${linkBase} ${pathname === "/" ? active : inactive}`}>Home</NavbarItem>
           </Link>
-        </NavbarItem>
-        <NavbarItem isActive className="p-3 border">
           <Link aria-current="page" href="/projects">
-            Projecten
+            <NavbarItem isActive={pathname === "/projects"} className={`${linkBase} ${pathname === "/projects" ? active : inactive}`}>Projecten</NavbarItem> 
           </Link>
-        </NavbarItem>
-        <NavbarItem className="p-3 border">
           <Link color="foreground" href="/portfolio">
-            Portfolio
+            <NavbarItem isActive={pathname === "/portfolio"} className={`${linkBase} ${pathname === "/portfolio" ? active : inactive}`}>Portfolio</NavbarItem>
           </Link>
-        </NavbarItem>
-        <NavbarItem className="p-3 border">
           <Link color="foreground" href="/aboutme">
-            Over mij
+            <NavbarItem isActive={pathname === "/aboutme"} className={`${linkBase} ${pathname === "/aboutme" ? active : inactive}`}>Over mij</NavbarItem>
           </Link>
-        </NavbarItem>
-        <NavbarItem className="p-3 border">
           <Link color="foreground" href="/contact">
-            Contact
+            <NavbarItem isActive={pathname === "/contact"} className={`${linkBase} ${pathname === "/contact" ? active : inactive}`}>Contact</NavbarItem>
           </Link>
-        </NavbarItem>
       </NavbarContent>
     </Navbar>
   );
