@@ -21,6 +21,7 @@ export default function Home() {
         <img src={'/Stefanwurpel.png'} alt="Stefan Wurpel" width={100} height={100} className="rounded-xl border border-yellow-400"/>
         </NavbarContent>
       <NavbarContent className="hidden sm:flex gap-4 " justify="center">
+
           <Link color="foreground" href="/">
             <NavbarItem isActive={pathname === "/"} className={`${linkBase} ${pathname === "/" ? active : inactive}`}>Home</NavbarItem>
           </Link>
