@@ -1,11 +1,11 @@
 
 import Navbar from '../components/Navbar'
 
-export default function aboutme() {
+export default function portfolio() {
     return(
         <div>
         <Navbar />
-        <div>over mij</div>
+        <div>portfolio</div>
         </div>
     )
 }
