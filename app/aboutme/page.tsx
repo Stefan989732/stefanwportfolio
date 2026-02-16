@@ -5,7 +5,7 @@ export default function aboutme() {
     return(
         <div>
         <Navbar />
-        <div>over mij</div>
+        <div className='pt-24'>over mij</div>
         </div>
     )
 }
