@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <Navbar className="bg-gray-800 p-4 flex justify-between items-center fixed">
       <NavbarContent>
-        <Image src={'/Stefanwurpel.png'} alt="Stefan Wurpel" width={150} height={150} 
+        <Image src={'/Stefanwurpel.svg'} alt="Stefan Wurpel" width={150} height={150} 
         className="absolute rounded-xl border border-gray-400 shadow-xl/30"/>
       </NavbarContent>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
