@@ -5,11 +5,11 @@ import {
   NavbarContent, 
   NavbarItem, 
   Link,
-  Image,
-  Button
+  Image
 } from "@heroui/react";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
+import { Flower, Leaf, Snowflake, Sun } from 'lucide-react';
 
 
 export default function Home() {
@@ -29,11 +29,11 @@ export default function Home() {
   return (
     <Navbar className="bg-gray-800 p-4 flex justify-between items-center fixed">
       <NavbarContent>
-        <Image src={'/Stefanwurpel.svg'} alt="Stefan Wurpel" width={150} height={150} 
+        <Image src={'/StefanWurpel.jpg'} alt="Stefan Wurpel" width={150} height={150} 
         className="absolute rounded-xl border border-gray-400 shadow-xl/30"/>
       </NavbarContent>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <Link color="foreground" href="/">
+        <Link href="/">
           <NavbarItem isActive={pathname === "/"} className={`${linkBase} ${pathname === "/" ? active : inactive}`}>Home</NavbarItem>
         </Link>
         <Link aria-current="page" href="/projects">
@@ -56,16 +56,16 @@ export default function Home() {
             className={`${baseItem} rounded-s-lg bg-pink-400 ${
             selected === 'spring' ? selectedItem : unselectedItem
             }`}>
-          <Image src={'/flower.svg'}/>
+          <Flower />
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link  
+          <Link
             onClick={() => setSelected('summer')}
             className={`${baseItem} bg-yellow-400 ${
             selected === 'summer' ? selectedItem : unselectedItem
             }`}>
-          <Image src={'/sun.svg'}/>
+          <Sun />
           </Link>
         </NavbarItem>
         <NavbarItem>
@@ -74,7 +74,7 @@ export default function Home() {
             className={`${baseItem} bg-orange-400 ${
             selected === 'autumn' ? selectedItem : unselectedItem
             }`}>
-          <Image src={'/leaf.svg'}/>
+          <Leaf />
           </Link>
         </NavbarItem>
         <NavbarItem>
@@ -83,7 +83,7 @@ export default function Home() {
             className={`${baseItem} rounded-r-lg  bg-cyan-400 ${
             selected === 'winter' ? selectedItem : unselectedItem
             }`}>
-          <Image src={'/snowflake.svg'}/>
+          <Snowflake />
           </Link>
         </NavbarItem>
       </NavbarContent>
