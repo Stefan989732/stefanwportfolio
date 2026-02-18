@@ -8,7 +8,7 @@ import {
   Image
 } from "@heroui/react";
 import { usePathname } from "next/navigation";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Flower, Leaf, Snowflake, Sun } from 'lucide-react';
 
 
@@ -26,13 +26,46 @@ export default function Home() {
   const selectedItem = 'flex-grow px-6';
   const unselectedItem = 'px-1'; 
 
+  useEffect(() => {
+  const stored = localStorage.getItem("season");
+
+  let initialSeason = "spring";
+
+  if (stored) {
+    initialSeason = stored;
+  } else {
+    const month = new Date().getMonth();
+
+    if (month >= 2 && month <= 4) initialSeason = "spring";
+    else if (month >= 5 && month <= 7) initialSeason = "summer";
+    else if (month >= 8 && month <= 10) initialSeason = "autumn";
+    else initialSeason = "winter";
+  }
+
+  setSelected(initialSeason);
+  document.documentElement.setAttribute("data-season", initialSeason);
+}, []);
+
+useEffect(() => {
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const theme = prefersDark ? "dark" : "light";
+
+  document.documentElement.setAttribute("data-theme", theme);
+}, []);
+
+// Sync whenever season changes
+  useEffect(() => {
+  document.documentElement.setAttribute("data-season", selected);
+  localStorage.setItem("season", selected);
+}, [selected]);
+
   return (
     <Navbar className="bg-gray-800 p-4 flex justify-between items-center fixed">
       <NavbarContent>
         <Image src={'/StefanWurpel.jpg'} alt="Stefan Wurpel" width={150} height={150} 
         className="absolute rounded-xl border border-gray-400 shadow-xl/30"/>
       </NavbarContent>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden xl:flex items-center fixed ml-50 gap-4" justify="center">
         <Link href="/">
           <NavbarItem isActive={pathname === "/"} className={`${linkBase} ${pathname === "/" ? active : inactive}`}>Home</NavbarItem>
         </Link>
