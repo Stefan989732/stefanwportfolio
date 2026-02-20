@@ -2,8 +2,8 @@
 
 import {
   Navbar,
-  NavbarContent, 
-  NavbarItem, 
+  NavbarContent,
+  NavbarItem,
   Link,
   Image
 } from "@heroui/react";
@@ -24,56 +24,56 @@ export default function Home() {
   //seasonal buttons
   const baseItem = 'h-8 transition-all duration-300 flex items-center justify-center';
   const selectedItem = 'flex-grow px-6';
-  const unselectedItem = 'px-1'; 
+  const unselectedItem = 'px-1';
 
   useEffect(() => {
-  const stored = localStorage.getItem("season");
+    const stored = localStorage.getItem("season");
 
-  let initialSeason = "spring";
+    let initialSeason = "spring";
 
-  if (stored) {
-    initialSeason = stored;
-  } else {
-    const month = new Date().getMonth();
+    if (stored) {
+      initialSeason = stored;
+    } else {
+      const month = new Date().getMonth();
 
-    if (month >= 2 && month <= 4) initialSeason = "spring";
-    else if (month >= 5 && month <= 7) initialSeason = "summer";
-    else if (month >= 8 && month <= 10) initialSeason = "autumn";
-    else initialSeason = "winter";
-  }
+      if (month >= 2 && month <= 4) initialSeason = "spring";
+      else if (month >= 5 && month <= 7) initialSeason = "summer";
+      else if (month >= 8 && month <= 10) initialSeason = "autumn";
+      else initialSeason = "winter";
+    }
 
-  setSelected(initialSeason);
-  document.documentElement.setAttribute("data-season", initialSeason);
-}, []);
+    setSelected(initialSeason);
+    document.documentElement.setAttribute("data-season", initialSeason);
+  }, []);
 
-useEffect(() => {
-  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const theme = prefersDark ? "dark" : "light";
-
-  document.documentElement.setAttribute("data-theme", theme);
-}, []);
-
-// Sync whenever season changes
   useEffect(() => {
-  document.documentElement.setAttribute("data-season", selected);
-  localStorage.setItem("season", selected);
-}, [selected]);
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const theme = prefersDark ? "dark" : "light";
+
+    document.documentElement.setAttribute("data-theme", theme);
+  }, []);
+
+  // Sync whenever season changes
+  useEffect(() => {
+    document.documentElement.setAttribute("data-season", selected);
+    localStorage.setItem("season", selected);
+  }, [selected]);
 
   return (
-    <Navbar className="bg-gray-800 p-4 flex justify-between items-center fixed">
-      <NavbarContent>
+    <Navbar className="bg-gray-800 p-4 flex justify-between items-center fixed text-white z-1">
+      {/* <NavbarContent>
         <Image src={'/StefanWurpel.jpg'} alt="Stefan Wurpel" width={150} height={150} 
         className="absolute rounded-xl border border-gray-400 shadow-xl/30"/>
-      </NavbarContent>
-      <NavbarContent className="hidden xl:flex items-center fixed ml-50 gap-4" justify="center">
+      </NavbarContent> */}
+      <NavbarContent className="hidden xl:flex items-center gap-4" justify="center">
         <Link href="/">
           <NavbarItem isActive={pathname === "/"} className={`${linkBase} ${pathname === "/" ? active : inactive}`}>Home</NavbarItem>
         </Link>
         <Link aria-current="page" href="/projects">
-          <NavbarItem isActive={pathname === "/projects"} className={`${linkBase} ${pathname === "/projects" ? active : inactive}`}>Projecten</NavbarItem> 
+          <NavbarItem isActive={pathname === "/projects"} className={`${linkBase} ${pathname === "/projects" ? active : inactive}`}>Projecten</NavbarItem>
         </Link>
-        <Link color="foreground" href="/portfolio">
-          <NavbarItem isActive={pathname === "/portfolio"} className={`${linkBase} ${pathname === "/portfolio" ? active : inactive}`}>Portfolio</NavbarItem>
+        <Link color="foreground" href="/experience">
+          <NavbarItem isActive={pathname === "/experience"} className={`${linkBase} ${pathname === "/experience" ? active : inactive}`}>ervaring</NavbarItem>
         </Link>
         <Link color="foreground" href="/aboutme">
           <NavbarItem isActive={pathname === "/aboutme"} className={`${linkBase} ${pathname === "/aboutme" ? active : inactive}`}>Over mij</NavbarItem>
@@ -82,41 +82,37 @@ useEffect(() => {
           <NavbarItem isActive={pathname === "/contact"} className={`${linkBase} ${pathname === "/contact" ? active : inactive}`}>Contact</NavbarItem>
         </Link>
       </NavbarContent>
-      <NavbarContent className="shadow-xl/30 hidden sm:flex gap-0">
-        <NavbarItem className="rounded-s-lg">
-          <Link 
+      <NavbarContent className="shadow-xl/30 sm:flex gap-0">
+        <NavbarItem>
+          <Link
             onClick={() => setSelected('spring')}
-            className={`${baseItem} rounded-s-lg bg-pink-400 ${
-            selected === 'spring' ? selectedItem : unselectedItem
-            }`}>
-          <Flower />
+            className={`${baseItem} rounded-s-lg bg-pink-400 ${selected === 'spring' ? selectedItem : unselectedItem
+              }`}>
+            <Flower />
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link
             onClick={() => setSelected('summer')}
-            className={`${baseItem} bg-yellow-400 ${
-            selected === 'summer' ? selectedItem : unselectedItem
-            }`}>
-          <Sun />
+            className={`${baseItem} bg-yellow-400 ${selected === 'summer' ? selectedItem : unselectedItem
+              }`}>
+            <Sun />
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link  
+          <Link
             onClick={() => setSelected('autumn')}
-            className={`${baseItem} bg-orange-400 ${
-            selected === 'autumn' ? selectedItem : unselectedItem
-            }`}>
-          <Leaf />
+            className={`${baseItem} bg-orange-400 ${selected === 'autumn' ? selectedItem : unselectedItem
+              }`}>
+            <Leaf />
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link  
+          <Link
             onClick={() => setSelected('winter')}
-            className={`${baseItem} rounded-r-lg  bg-cyan-400 ${
-            selected === 'winter' ? selectedItem : unselectedItem
-            }`}>
-          <Snowflake />
+            className={`${baseItem} rounded-r-lg  bg-cyan-400 ${selected === 'winter' ? selectedItem : unselectedItem
+              }`}>
+            <Snowflake />
           </Link>
         </NavbarItem>
       </NavbarContent>

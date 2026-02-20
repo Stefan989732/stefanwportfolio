@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -9,18 +7,24 @@
   --font-mono: var(--font-geist-mono);
 }
 
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* SPRING - LIGHT */
 :root[data-season="spring"][data-theme="light"] {
-  --background: #fdf2f8;
+  --background: #ffddf0;
   --foreground: #3f3f46;
   --accent: #ec4899;
 }
 
 /* SUMMER - LIGHT */
 :root[data-season="summer"][data-theme="light"] {
-  --background: #000000;
-  --foreground: #1f2937;
-  --accent: #000000;
+  --background: #fffbea;
+  --foreground: #ffffff;
+  --accent: #facc15;
 }
 
 /* AUTUMN - LIGHT */
@@ -37,36 +41,42 @@
   --accent: #38bdf8;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* SPRING - DARK */
+/* SPRING - NIGHT DARK */
 :root[data-season="spring"][data-theme="dark"] {
-  --background: #1f1722;
-  --foreground: #fdf2f8;
-  --accent: #f472b6;
+  --background: #120f1b;
+  /* deep plum-indigo night [web:5] */
+  --foreground: #f8eafd;
+  /* soft light lilac, still high contrast [web:5] */
+  --accent: #e87ab9;
+  /* muted blossom pink, less neon than #f472b6 [web:5] */
 }
 
-/* SUMMER - DARK */
+/* SUMMER - NIGHT DARK */
 :root[data-season="summer"][data-theme="dark"] {
-  --background: #1f1a0d;
-  --foreground: #fffbea;
-  --accent: #fde047;
+  --background: #081322;
+  /* dark navy, summer night sky vibe [web:6][web:10] */
+  --foreground: #f5f3e6;
+  /* warm off‑white, like dim beach lights [web:2] */
+  --accent: #f5c94a;
+  /* softer golden yellow, like warm lantern glow [web:6] */
 }
 
-/* AUTUMN - DARK */
+/* AUTUMN - NIGHT DARK */
 :root[data-season="autumn"][data-theme="dark"] {
-  --background: #2a1608;
-  --foreground: #fff7ed;
-  --accent: #fb923c;
+  --background: #1a0f08;
+  /* very dark brown-ember, moody fall night [web:3][web:7] */
+  --foreground: #fbeee0;
+  /* warm cream, keeps the cosy feel [web:7] */
+  --accent: #f97316;
+  /* pumpkin-orange, a touch deeper than before [web:3][web:7] */
 }
 
-/* WINTER - DARK */
+/* WINTER - NIGHT DARK */
 :root[data-season="winter"][data-theme="dark"] {
-  --background: #0f172a;
-  --foreground: #f0f9ff;
-  --accent: #7dd3fc;
+  --background: #020617;
+  /* almost-black midnight blue [web:8][web:4] */
+  --foreground: #e5f2ff;
+  /* icy pale blue-white, crisp but not harsh [web:8] */
+  --accent: #60a5fa;
+  /* softer frost blue vs bright #7dd3fc [web:8][web:4] */
 }
