@@ -11,6 +11,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  border-color: var(--accent);
 }
 
 /* SPRING - LIGHT */
@@ -18,6 +19,7 @@ body {
   --background: #ffddf0;
   --foreground: #3f3f46;
   --accent: #ec4899;
+  --detail: #d61575;
 }
 
 /* SUMMER - LIGHT */
@@ -25,6 +27,7 @@ body {
   --background: #fffbea;
   --foreground: #ffffff;
   --accent: #facc15;
+  --detail: #967a0d;
 }
 
 /* AUTUMN - LIGHT */
@@ -32,6 +35,7 @@ body {
   --background: #fff7ed;
   --foreground: #3f1d0d;
   --accent: #ea580c;
+  --detail: #b03f02;
 }
 
 /* WINTER - LIGHT */
@@ -39,44 +43,49 @@ body {
   --background: #f0f9ff;
   --foreground: #0f172a;
   --accent: #38bdf8;
+  --detail: #0c8bc2;
 }
 
 /* SPRING - NIGHT DARK */
 :root[data-season="spring"][data-theme="dark"] {
-  --background: #120f1b;
+  --background: #3b2b6e;
   /* deep plum-indigo night [web:5] */
   --foreground: #f8eafd;
   /* soft light lilac, still high contrast [web:5] */
   --accent: #e87ab9;
   /* muted blossom pink, less neon than #f472b6 [web:5] */
+  --detail: #c2478d;
 }
 
 /* SUMMER - NIGHT DARK */
 :root[data-season="summer"][data-theme="dark"] {
-  --background: #081322;
+  --background: #846d28;
   /* dark navy, summer night sky vibe [web:6][web:10] */
   --foreground: #f5f3e6;
   /* warm off‑white, like dim beach lights [web:2] */
   --accent: #f5c94a;
   /* softer golden yellow, like warm lantern glow [web:6] */
+  --detail: #efbb20;
 }
 
 /* AUTUMN - NIGHT DARK */
 :root[data-season="autumn"][data-theme="dark"] {
-  --background: #1a0f08;
+  --background: #50280f;
   /* very dark brown-ember, moody fall night [web:3][web:7] */
   --foreground: #fbeee0;
   /* warm cream, keeps the cosy feel [web:7] */
   --accent: #f97316;
   /* pumpkin-orange, a touch deeper than before [web:3][web:7] */
+  --detail: #d25801;
 }
 
 /* WINTER - NIGHT DARK */
 :root[data-season="winter"][data-theme="dark"] {
-  --background: #020617;
+  --background: #040f3d;
   /* almost-black midnight blue [web:8][web:4] */
   --foreground: #e5f2ff;
   /* icy pale blue-white, crisp but not harsh [web:8] */
   --accent: #60a5fa;
   /* softer frost blue vs bright #7dd3fc [web:8][web:4] */
+  --detail: #1074ef;
 }
