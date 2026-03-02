@@ -1,6 +1,4 @@
 
-import { Home as Navbar } from '../components/Navbar'
-
 export default function projects() {
     return(
         <div>
