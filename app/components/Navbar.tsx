@@ -4,17 +4,32 @@ import {
   Navbar,
   NavbarContent,
   NavbarItem,
-  Link,
-  Image
+  Link
 } from "@heroui/react";
+
 import { usePathname } from "next/navigation";
 import React, { useState, useEffect } from "react";
-import { Flower, Leaf, Snowflake, Sun } from 'lucide-react';
+import { Flower, Leaf, Snowflake, Sun, Menu, X } from "lucide-react";
 
 
 export default function Home() {
-  const [selected, setSelected] = useState('spring');
   const pathname = usePathname();
+
+    /* ================= STATE ================= */
+
+  const [selected, setSelected] = useState("spring");
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  /* ================= NAV ITEMS ================= */
+
+  const navItems = [
+    { label: "Home", href: "/" },
+    { label: "Projecten", href: "/projects" },
+    { label: "Ervaring", href: "/experience" },
+    { label: "Over mij", href: "/aboutme" },
+    { label: "Contact", href: "/contact" },
+  ];
 
   //navigation buttons
   const linkBase = "flex items-center justify-center h-12 px-4 border rounded-xl transition-all shadow-xl/30";
@@ -59,28 +74,67 @@ export default function Home() {
     localStorage.setItem("season", selected);
   }, [selected]);
 
+  useEffect(() => {
+  const checkScreen = () => {
+    setIsMobile(window.innerWidth < 1024); // Tailwind lg breakpoint
+  };
+
+  checkScreen(); // run once on load
+
+  window.addEventListener("resize", checkScreen);
+
+  return () => window.removeEventListener("resize", checkScreen);
+}, []);
+
   return (
-    <Navbar className="bg-gray-800 p-4 flex justify-between items-center fixed text-white z-1">
-      {/* <NavbarContent>
-        <Image src={'/StefanWurpel.jpg'} alt="Stefan Wurpel" width={150} height={150} 
-        className="absolute rounded-xl border border-gray-400 shadow-xl/30"/>
-      </NavbarContent> */}
-      <NavbarContent className="hidden xl:flex items-center gap-4" justify="center">
-        <Link href="/">
-          <NavbarItem isActive={pathname === "/"} className={`${linkBase} ${pathname === "/" ? active : inactive}`}>Home</NavbarItem>
-        </Link>
-        <Link aria-current="page" href="/projects">
-          <NavbarItem isActive={pathname === "/projects"} className={`${linkBase} ${pathname === "/projects" ? active : inactive}`}>Projecten</NavbarItem>
-        </Link>
-        <Link color="foreground" href="/experience">
-          <NavbarItem isActive={pathname === "/experience"} className={`${linkBase} ${pathname === "/experience" ? active : inactive}`}>ervaring</NavbarItem>
-        </Link>
-        <Link color="foreground" href="/aboutme">
-          <NavbarItem isActive={pathname === "/aboutme"} className={`${linkBase} ${pathname === "/aboutme" ? active : inactive}`}>Over mij</NavbarItem>
-        </Link>
-        <Link color="foreground" href="/contact">
-          <NavbarItem isActive={pathname === "/contact"} className={`${linkBase} ${pathname === "/contact" ? active : inactive}`}>Contact</NavbarItem>
-        </Link>
+    <Navbar className="bg-gray-800 p-4 flex fixed text-white z-50">
+       <NavbarContent justify="start">
+
+        {/* ===== IF MOBILE ===== */}
+        {isMobile ? (
+          <>
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="p-2"
+            >
+              {menuOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
+
+            {menuOpen && (
+              <div className="absolute top-full left-0 w-screen bg-gray-800 flex flex-col p-4 shadow-lg">
+                {navItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setMenuOpen(false)}
+                    className={`p-3 rounded-lg ${
+                      pathname === item.href
+                        ? "text-yellow-400"
+                        : ""
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </>
+        ) : (
+          /* ===== ELSE DESKTOP ===== */
+          <div className="flex gap-4">
+            {navItems.map((item) => (
+              <Link key={item.href} href={item.href}>
+                <NavbarItem
+                  className={`${linkBase} ${
+                    pathname === item.href ? active : inactive
+                  }`}
+                >
+                  {item.label}
+                </NavbarItem>
+              </Link>
+            ))}
+          </div>
+        )}
       </NavbarContent>
       <NavbarContent className="shadow-xl/30 sm:flex gap-0">
         <NavbarItem>

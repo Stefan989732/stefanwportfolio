@@ -18,11 +18,12 @@ export default function Home() {
             <h1 className="text-5xl text-center">Stefan Wurpel</h1>
           </div>
 
-          <div className="flex justify-center items-center p-6">
+          <div className="flex justify-center items-center p-6 overflow-hidden">
             <Image
               src="/ProfilePicture.jpg"
               className="mask-radial-at-center mask-radial-from-50% mask-radial-to-70%"
             />
+            
           </div>
 
           <div className="flex items-center p-6">

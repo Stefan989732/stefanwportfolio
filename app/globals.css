@@ -89,3 +89,22 @@ body {
   /* softer frost blue vs bright #7dd3fc [web:8][web:4] */
   --detail: #1074ef;
 }
+
+/* @layer utilities {
+  @keyframes roll {
+    0% {
+      opacity: 1;
+      transform: rotate(0deg);
+      
+    }
+
+    100% {
+      opacity: 1;
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: roll .3s infinite ease-in-out;
+  }
+} */
