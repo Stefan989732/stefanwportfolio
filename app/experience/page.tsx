@@ -170,7 +170,7 @@ export default function experience() {
                         </div>
                         <div className="w-48 shrink-0">
                             <Image
-                                src="/Moeder.jpg"
+                                src="/Moeder.JPG"
                                 width={200}
                                 height={200}
                                 className="rounded-xl object-cover object-[50%_20%]"
