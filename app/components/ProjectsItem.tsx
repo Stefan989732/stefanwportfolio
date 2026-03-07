@@ -25,7 +25,7 @@ export default function ProjectsItem({
           alt={title}
           width={400}
           height={220}
-          className="w-full h-52 object-cover border-b-4 border-[var(--detail)]"
+          className="w-full h-52 object-cover border-b-4 border-[var(--detail)]]"
         />
 
         {/* Content */}

@@ -12,9 +12,30 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
   border-color: var(--accent);
+  transition: background 0.4s ease, color 0.4s ease;
 }
 
-/* SPRING - LIGHT */
+/* =========================================================
+   BASE TOKENS (DEFAULT FALLBACKS)
+========================================================= */
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --accent: #000000;
+  --detail: #000000;
+
+  /* Seasonal Effect Tokens */
+  --snow-opacity: 0;
+  --snow-color: #ffffff;
+  --snow-blur: 0px;
+  --snow-speed-multiplier: 0;
+}
+
+/* =========================================================
+   SPRING - LIGHT
+========================================================= */
+
 :root[data-season="spring"][data-theme="light"] {
   --background: #ffddf0;
   --foreground: #3f3f46;
@@ -22,7 +43,10 @@ body {
   --detail: #d61575;
 }
 
-/* SUMMER - LIGHT */
+/* =========================================================
+   SUMMER - LIGHT
+========================================================= */
+
 :root[data-season="summer"][data-theme="light"] {
   --background: #fffbea;
   --foreground: #ffffff;
@@ -30,7 +54,10 @@ body {
   --detail: #967a0d;
 }
 
-/* AUTUMN - LIGHT */
+/* =========================================================
+   AUTUMN - LIGHT
+========================================================= */
+
 :root[data-season="autumn"][data-theme="light"] {
   --background: #fff7ed;
   --foreground: #3f1d0d;
@@ -38,57 +65,81 @@ body {
   --detail: #b03f02;
 }
 
-/* WINTER - LIGHT */
+/* =========================================================
+   WINTER - LIGHT
+========================================================= */
+
 :root[data-season="winter"][data-theme="light"] {
   --background: #f0f9ff;
   --foreground: #0f172a;
   --accent: #38bdf8;
   --detail: #0c8bc2;
+
+  /* Snow enabled */
+  --snow-opacity: 1;
+  --snow-color: #ffffff;
+  --snow-blur: 0.5px;
+  --snow-speed-multiplier: 1;
 }
 
-/* SPRING - NIGHT DARK */
+/* =========================================================
+   SPRING - DARK
+========================================================= */
+
 :root[data-season="spring"][data-theme="dark"] {
   --background: #3b2b6e;
-  /* deep plum-indigo night [web:5] */
   --foreground: #f8eafd;
-  /* soft light lilac, still high contrast [web:5] */
   --accent: #e87ab9;
-  /* muted blossom pink, less neon than #f472b6 [web:5] */
   --detail: #c2478d;
 }
 
-/* SUMMER - NIGHT DARK */
+/* =========================================================
+   SUMMER - DARK
+========================================================= */
+
 :root[data-season="summer"][data-theme="dark"] {
   --background: #846d28;
-  /* dark navy, summer night sky vibe [web:6][web:10] */
   --foreground: #f5f3e6;
-  /* warm off‑white, like dim beach lights [web:2] */
   --accent: #f5c94a;
-  /* softer golden yellow, like warm lantern glow [web:6] */
   --detail: #efbb20;
 }
 
-/* AUTUMN - NIGHT DARK */
+/* =========================================================
+   AUTUMN - DARK
+========================================================= */
+
 :root[data-season="autumn"][data-theme="dark"] {
   --background: #50280f;
-  /* very dark brown-ember, moody fall night [web:3][web:7] */
   --foreground: #fbeee0;
-  /* warm cream, keeps the cosy feel [web:7] */
   --accent: #f97316;
-  /* pumpkin-orange, a touch deeper than before [web:3][web:7] */
   --detail: #d25801;
 }
 
-/* WINTER - NIGHT DARK */
+/* =========================================================
+   WINTER - DARK
+========================================================= */
+
 :root[data-season="winter"][data-theme="dark"] {
   --background: #040f3d;
-  /* almost-black midnight blue [web:8][web:4] */
   --foreground: #e5f2ff;
-  /* icy pale blue-white, crisp but not harsh [web:8] */
   --accent: #60a5fa;
-  /* softer frost blue vs bright #7dd3fc [web:8][web:4] */
   --detail: #1074ef;
+
+  /* Snow enabled */
+  --snow-opacity: 0.85;
+  --snow-color: #e5f2ff;
+  --snow-blur: 1px;
+  --snow-speed-multiplier: 1;
 }
+
+/* =========================================================
+   GLOBAL APPLICATION
+========================================================= */
+
+body {
+  
+}
+
 
 /* @layer utilities {
   @keyframes roll {

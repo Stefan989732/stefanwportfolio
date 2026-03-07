@@ -7,7 +7,9 @@ import {
   SiTailwindcss,
   SiJavascript,
   SiMysql,
-  SiCplusplus
+  SiCplusplus,
+  SiUnrealengine,
+  SiBlender  
 } from "react-icons/si";
 
 import {
@@ -17,7 +19,8 @@ import {
   FaUnity,
   FaHtml5,
   FaSass,
-  FaJava
+  FaJava,
+  FaVuejs 
 } from "react-icons/fa";
 
 import { TbBrandCSharp } from "react-icons/tb";
@@ -35,6 +38,7 @@ export default function SkillsSection() {
         <SkillsItem icon={FaHtml5} label="HTML" color="text-orange-500" />
         <SkillsItem icon={FaSass} label="SCSS" color="text-pink-500" />
         <SkillsItem icon={FaAngular} label="Angular" color="text-red-500" />
+        <SkillsItem icon={FaVuejs} label="Vue.js" color="text-red-500" />
       </SkillCard>
 
       <SkillCard title="Backend Skills">
@@ -43,11 +47,14 @@ export default function SkillsSection() {
         <SkillsItem icon={SiMysql} label="MySQL" />
         <SkillsItem icon={TbBrandCSharp} label="C#" color="text-purple-500" />
         <SkillsItem icon={FaJava} label="Java" />
+        <SkillsItem icon={SiCplusplus} label="C++" color="text-blue-500" />
       </SkillCard>
 
-      <SkillCard title="Full-stack">
-        <SkillsItem icon={SiCplusplus} label="C++" color="text-blue-500" />
+      <SkillCard title="Tools">
+        <SkillsItem icon={SiUnrealengine} label="Unity" />
         <SkillsItem icon={FaUnity} label="Unity" />
+        <SkillsItem icon={SiBlender } label="Blender" />
+
       </SkillCard>
 
     </section>

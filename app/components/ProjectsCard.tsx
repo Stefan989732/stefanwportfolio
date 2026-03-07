@@ -13,13 +13,13 @@ export default function ProjectsSection() {
 
       <ProjectsItem
         title="ITP Generator"
-        image="/StefanWurpel.jpg"
+        image="/Placeholder.jpg"
         href="/projects"
         description="Verbetering van schooltool met inactivity warning voor het vak ITP."
       />
       <ProjectsItem
         title="Enovation"
-        image="/StefanWurpel.jpg"
+        image="/Placeholder.jpg"
         href="/projects"
         description="tool ontwikkeld voor de Service & Support team van het bedrijf."
       />

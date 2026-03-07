@@ -10,6 +10,7 @@ import HobbiesCard from "./components/HobbiesCard";
 
 export default function Home() {
   return (
+    
     <div className='px-3 text-black'>
       <section className="grid md:grid-cols-3 gap-6 bg-white rounded-xl shadow-xl/30 border-2 border-t-4 border-[var(--accent)] py-12">
 
@@ -38,15 +39,17 @@ export default function Home() {
         </div>
 
       </section>
-      <div className="flex items-center text-4xl text-white gap-2 py-8"><Divider />Skills<Divider /></div>
+      <div className="max-w-4xl flex items-center text-4xl text-[var(--detail)] gap-2 py-8">
+        <Divider />Skills<Divider />
+        </div>
 
       <SkillsSection />
 
-      <div className="flex items-center text-4xl text-white gap-2 py-8"><Divider />Projecten<Divider /></div>
+      <div className="max-w-4xl flex items-center text-4xl text-[var(--detail)] gap-2 py-8"><Divider />Projecten<Divider /></div>
 
       <ProjectsCard />
 
-      <div className="flex items-center text-4xl text-white gap-2 py-8"><Divider /><h1>Hobby's</h1><Divider /></div>
+      <div className="max-w-4xl flex items-center text-4xl text-[var(--detail)] gap-2 py-8"><Divider /><h1>Hobby's</h1><Divider /></div>
 
       <HobbiesCard />
 
