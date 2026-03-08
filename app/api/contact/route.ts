@@ -1,34 +1,39 @@
-// import nodemailer from "nodemailer";
+import { NextRequest, NextResponse } from "next/server";
+import { Resend } from "resend";
 
-export async function POST(req: Request) {
-  const { name, email, message } = await req.json();
+export async function POST(req: NextRequest) {
+  try {
+    const { name, email, message } = await req.json();
 
-//   const transporter = nodemailer.createTransport({
-//     service: "gmail",
-//     auth: {
-//       user: process.env.EMAIL_USER,
-//       pass: process.env.EMAIL_PASS
-//     }
-//   });
+    if (!process.env.RESEND_API_KEY) {
+      return NextResponse.json({ 
+        success: false, 
+        error: "RESEND_API_KEY missing from .env.local" 
+      });
+    }
 
-//   try {
-//     await transporter.sendMail({
-//       from: email,
-//       to: "stefan.wurpel@hotmail.com",
-//       subject: `Portfolio message from ${name}`,
-//       text: message,
-//       html: `
-//         <h3>New contact form message</h3>
-//         <p><strong>Name:</strong> ${name}</p>
-//         <p><strong>Email:</strong> ${email}</p>
-//         <p><strong>Message:</strong></p>
-//         <p>${message}</p>
-//       `
-//     });
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
-    return Response.json({ success: true });
+    const { data, error } = await resend.emails.send({
+      from: "onboarding@resend.dev",
+      to: "stefan.wurpel@hotmail.com",
+      replyTo: email, 
+      subject: `Portfolio message from ${name}`,
+      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+    });
 
-//   } catch (error) {
-//     return Response.json({ success: false, error });
+    if (error) {
+      return NextResponse.json({ 
+        success: false, 
+        error: error.message || "Resend API error" 
+      });
+    }
+
+    return NextResponse.json({ success: true });
+  } catch (error) {
+    return NextResponse.json({ 
+      success: false, 
+      error: `Server error: ${error instanceof Error ? error.message : String(error)}` 
+    });
   }
-// }
+}
