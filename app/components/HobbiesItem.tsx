@@ -14,7 +14,7 @@ export default function HobbiesItem({
 }: HobbiesItem) {
 
   return (
-    <div className="max-w-sm bg-white rounded-xl border-2 border-t-4 border-[var(--accent)] shadow-xl/30 overflow-hidden">
+    <div className="max-w-sm bg-[var(--surface)] rounded-xl border-2 border-t-4 border-[var(--accent)] shadow-xl/30 overflow-hidden">
     <Image
               src={image}
               alt={title}

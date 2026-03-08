@@ -6,10 +6,10 @@ import { Image } from "@heroui/react";
 
 export default function Experience() {
     return (
-        <div className="px-4 md:px-6 text-black flex flex-col items-center gap-10">
+        <div className="px-4 md:px-6 text-[var(--text-primary)] flex flex-col items-center gap-10">
 
             {/* WORK EXPERIENCE */}
-            <section className="bg-white w-full max-w-6xl rounded-xl shadow-xl border-2 border-t-4 border-[var(--accent)] py-8 md:py-12 px-6 md:px-10">
+            <section className="bg-[var(--surface)] w-full max-w-6xl rounded-xl shadow-xl border-2 border-t-4 border-[var(--accent)] py-8 md:py-12 px-6 md:px-10">
 
                 <div className="max-w-5xl mx-auto">
 
@@ -28,16 +28,16 @@ export default function Experience() {
                         <div className="relative">
                             <div className="absolute xl:-left-9 -left-5 top-6 w-5 h-5 bg-[var(--detail)] rounded-full border-4 border-white shadow-md" />
 
-                            <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 border-2 border-l-4 border-[var(--accent)]">
+                            <div className="bg-[var(--surface)] rounded-xl shadow-lg p-6 md:p-8 border-2 border-l-4 border-[var(--accent)]">
                                 <h3 className="text-xl md:text-2xl font-semibold mb-2">
                                     Vrijwilligerswerk — Coderdojo
                                 </h3>
 
-                                <p className="text-gray-600">
+                                <p className="text-[var(--text-secondary)]">
                                     <CiCalendar className="inline" /> nov 2021 - heden
                                 </p>
 
-                                <p className="text-gray-600 mb-4">
+                                <p className="text-[var(--text-secondary)] mb-4">
                                     <CiLocationOn className="inline" /> Bergen op Zoom, Nederland
                                 </p>
 
@@ -62,16 +62,16 @@ export default function Experience() {
                         <div className="relative">
                             <div className="absolute xl:-left-9 -left-5 top-6 w-5 h-5 bg-[var(--detail)] rounded-full border-4 border-white shadow-md" />
 
-                            <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 border-2 border-l-4 border-[var(--accent)]">
+                            <div className="bg-[var(--surface)] rounded-xl shadow-lg p-6 md:p-8 border-2 border-l-4 border-[var(--accent)]">
                                 <h3 className="text-xl md:text-2xl font-semibold mb-2">
                                     Stagiair — JRCZ
                                 </h3>
 
-                                <p className="text-gray-600">
+                                <p className="text-[var(--text-secondary)]">
                                     <CiCalendar className="inline" /> feb 2024 - jul 2024
                                 </p>
 
-                                <p className="text-gray-600 mb-4">
+                                <p className="text-[var(--text-secondary)] mb-4">
                                     <CiLocationOn className="inline" /> Middelburg, Nederland
                                 </p>
 
@@ -97,16 +97,16 @@ export default function Experience() {
                         <div className="relative">
                             <div className="absolute xl:-left-9 -left-5 top-6 w-5 h-5 bg-[var(--detail)] rounded-full border-4 border-white shadow-md" />
 
-                            <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 border-2 border-l-4 border-[var(--accent)]">
+                            <div className="bg-[var(--surface)] rounded-xl shadow-lg p-6 md:p-8 border-2 border-l-4 border-[var(--accent)]">
                                 <h3 className="text-xl md:text-2xl font-semibold mb-2">
                                     Stagiair — Enovation
                                 </h3>
 
-                                <p className="text-gray-600">
+                                <p className="text-[var(--text-secondary)]">
                                     <CiCalendar className="inline" /> feb 2023 - jul 2023
                                 </p>
 
-                                <p className="text-gray-600 mb-4">
+                                <p className="text-[var(--text-secondary)] mb-4">
                                     <CiLocationOn className="inline" /> Rotterdam, Nederland
                                 </p>
 
@@ -132,7 +132,7 @@ export default function Experience() {
             </section>
 
             {/* EDUCATION */}
-            <section className="bg-white w-full max-w-6xl rounded-xl shadow-xl border-2 border-t-4 border-[var(--accent)] py-8 md:py-12 px-6 md:px-10">
+            <section className="bg-[var(--surface)] w-full max-w-6xl rounded-xl shadow-xl border-2 border-t-4 border-[var(--accent)] py-8 md:py-12 px-6 md:px-10">
 
                 <div className="flex items-center gap-4 mb-10 border-b-4 border-[var(--accent)]">
                     <h2 className="text-3xl md:text-4xl font-semibold pb-4">
@@ -142,16 +142,16 @@ export default function Experience() {
 
                 <div className="grid md:grid-cols-2 gap-6">
 
-                    <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 border-2 border-r-4 border-[var(--accent)]">
+                    <div className="bg-[var(--surface)] rounded-xl shadow-lg p-6 md:p-8 border-2 border-r-4 border-[var(--accent)]">
                         <h3 className="text-xl md:text-2xl font-semibold mb-2">
                             HBO-ICT — HZ
                         </h3>
 
-                        <p className="text-gray-600">
+                        <p className="text-[var(--text-secondary)]">
                             <CiCalendar className="inline" /> feb 2020 - jul 2024
                         </p>
 
-                        <p className="text-gray-600 mb-4">
+                        <p className="text-[var(--text-secondary)] mb-4">
                             <CiLocationOn className="inline" /> Middelburg
                         </p>
 
@@ -163,16 +163,16 @@ export default function Experience() {
                         </div>
                     </div>
 
-                    <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 border-2 border-l-4 border-[var(--accent)]">
+                    <div className="bg-[var(--surface)] rounded-xl shadow-lg p-6 md:p-8 border-2 border-l-4 border-[var(--accent)]">
                         <h3 className="text-xl md:text-2xl font-semibold mb-2">
                             Social Work — HZ
                         </h3>
 
-                        <p className="text-gray-600">
+                        <p className="text-[var(--text-secondary)]">
                             <CiCalendar className="inline" /> aug 2018 - feb 2019
                         </p>
 
-                        <p className="text-gray-600 mb-4">
+                        <p className="text-[var(--text-secondary)] mb-4">
                             <CiLocationOn className="inline" /> Vlissingen
                         </p>
 
@@ -194,7 +194,7 @@ export default function Experience() {
                     </h2>
                 </div>
 
-                <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 border-2 border-t-4 border-[var(--accent)]">
+                <div className="bg-[var(--surface)] rounded-xl shadow-lg p-6 md:p-8 border-2 border-t-4 border-[var(--accent)]">
                     <div className="flex flex-col md:flex-row gap-6">
 
                         <div className="flex-1">
@@ -202,11 +202,11 @@ export default function Experience() {
                                 Mantelzorger
                             </h3>
 
-                            <p className="text-gray-600">
+                            <p className="text-[var(--text-secondary)]">
                                 <CiCalendar className="inline" /> 2014 - aug 2024
                             </p>
 
-                            <p className="text-gray-600 mb-4">
+                            <p className="text-[var(--text-secondary)] mb-4">
                                 <CiLocationOn className="inline" /> Thuis
                             </p>
 

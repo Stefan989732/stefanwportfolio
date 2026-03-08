@@ -28,7 +28,7 @@ import { TbBrandCSharp } from "react-icons/tb";
 // filling the cards with my skills
 export default function SkillsSection() {
   return (
-    <section className="grid sm:grid-cols-2 xl:grid-cols-3 sm:gap-y-8 justify-items-center">
+    <section className="grid sm:grid-cols-2 xl:grid-cols-3 sm:gap-y-8 gap-y-8 justify-items-center">
 
       <SkillCard title="Frontend Skills">
         <SkillsItem icon={SiNextdotjs} label="Next.js" />

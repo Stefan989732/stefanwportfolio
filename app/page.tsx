@@ -11,8 +11,8 @@ import HobbiesCard from "./components/HobbiesCard";
 export default function Home() {
   return (
     
-    <div className='px-3 text-black'>
-      <section className="grid md:grid-cols-3 gap-6 bg-white rounded-xl shadow-xl/30 border-2 border-t-4 border-[var(--accent)] py-12">
+    <div className='px-3 text-[var(--text-primary)]'>
+      <section className="grid md:grid-cols-3 gap-6 bg-[var(--surface)] rounded-xl shadow-xl/30 border-2 border-t-4 border-[var(--accent)] py-12">
 
         <div className="flex items-center justify-center p-6">
           <h1 className="text-5xl text-center">Stefan Wurpel</h1>
@@ -39,17 +39,17 @@ export default function Home() {
         </div>
 
       </section>
-      <div className="max-w-4xl flex items-center text-4xl text-[var(--detail)] gap-2 py-8">
+      <div className="flex items-center text-4xl text-[var(--text-secondary)] gap-2 py-8">
         <Divider />Skills<Divider />
         </div>
 
       <SkillsSection />
 
-      <div className="max-w-4xl flex items-center text-4xl text-[var(--detail)] gap-2 py-8"><Divider />Projecten<Divider /></div>
+      <div className="flex items-center text-4xl text-[var(--text-secondary)] gap-2 py-8"><Divider />Projecten<Divider /></div>
 
       <ProjectsCard />
 
-      <div className="max-w-4xl flex items-center text-4xl text-[var(--detail)] gap-2 py-8"><Divider /><h1>Hobby's</h1><Divider /></div>
+      <div className="flex items-center text-4xl text-[var(--text-secondary)] gap-2 py-8"><Divider /><h1>Hobby's</h1><Divider /></div>
 
       <HobbiesCard />
 

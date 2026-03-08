@@ -23,9 +23,9 @@ export default function Contact() {
     };
 
     return (
-        <div className='px-3 text-black grid grid-cols-3 items-center gap-8'>
+        <div className='px-3 text-[var(--text-primary)] grid md:grid-cols-2 sm-grid-cols-1 items-center gap-8'>
 
-            <section className="bg-white col-span-2 rounded-xl shadow-xl/30 border-2 border-t-4 border-[var(--accent)] py-12">
+            <section className="bg-[var(--surface)]  rounded-xl shadow-xl/30 border-2 border-t-4 border-[var(--accent)] py-12">
 
                 <div className="p-6">
 
@@ -61,7 +61,7 @@ export default function Contact() {
                         <button
                             disabled
                             type="submit"
-                            className="tbg-[var(--accent)] bg-gray-400 text-white p-3 rounded"
+                            className="bg-[var(--accent)] bg-gray-400 text-white p-3 rounded"
                         >
                             Verstuur bericht
                         </button>
@@ -72,13 +72,13 @@ export default function Contact() {
 
             </section>
 
-            <section className="bg-white rounded-xl shadow-xl/30 border-2 border-t-4 border-[var(--accent)] py-12">
-                <div >
+            <section className="bg-[var(--surface)] rounded-xl shadow-xl/30 border-2 border-t-4 border-[var(--accent)] py-12">
+                <div className="p-4">
 
-                    <p className="py-4"><MdEmail className="inline h-8 w-8" />Stefan.wurpel@hotmail.com</p>
+                    <p className="pb-4"><MdEmail className="inline h-8 w-8" />Stefan.wurpel@hotmail.com</p>
                     <p className="py-4"><a target="blank" href="https://www.linkedin.com/in/stefan-wurpel-4890bb215/"><FaLinkedin className="inline h-8 w-8" />Stefan Wurpel</a></p>
                     <p className="py-4"><FaPhoneSquareAlt className="inline h-8 w-8" /> +31681849719</p>
-                    <p className="py-4"><MdLocationPin className="inline h-8 w-8" /> Bergen op Zoom, Nederland</p>
+                    <p className="pt-4"><MdLocationPin className="inline h-8 w-8" /> Bergen op Zoom, Nederland</p>
                 </div>
             </section>
 

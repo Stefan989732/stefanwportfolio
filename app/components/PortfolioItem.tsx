@@ -4,7 +4,7 @@ type PortfolioItem = {
   title: string;
   description: React.ReactNode;
   image: string;
-  details: string;
+  details: string[];
   type: string;
   tags: string[];
   learningPoints: string[];
@@ -22,14 +22,14 @@ export default function PortfolioItem({
   objectPosition = "50% 35%",
 }: PortfolioItem) {
   return (
-    <div className="bg-white rounded-xl border-2 border-t-4 border-[var(--accent)] shadow-xl/30 overflow-hidden">
+    <div className="bg-[var(--surface)] rounded-xl border-2 border-t-4 border-[var(--accent)] shadow-xl/30 overflow-hidden">
 
       <Image
         src={image}
         alt={title}
         width={1200}
         height={600}
-        className="w-full h-48 sm:h-56 md:h-64 object-fill border-b-4 border-[var(--detail)]"
+        className="w-full bg-white h-48 sm:h-56 md:h-64 object-fill border-b-4 border-[var(--detail)]"
         style={{ objectPosition }}
       />
 
@@ -47,9 +47,15 @@ export default function PortfolioItem({
           {description}
         </p>
 
-        <p className="text-sm mb-4 text-justify text-gray-800 whitespace-pre-wrap">
-          {details}
-        </p>
+
+          <ul className="text-sm space-y-1 mb-4 text-[var(--text-secondary)]">
+          {details.map((detail) => (
+            <li key={detail}>
+              <span className="text-[var(--text-primary)]">{detail}</span>
+            </li>
+          ))}
+        </ul>
+
 
         <p className="font-semibold mb-2 text-left">
           Belangrijkste lessen:
@@ -58,13 +64,13 @@ export default function PortfolioItem({
         <ul className="text-sm list-disc list-inside space-y-1 mb-4 text-[var(--accent)]">
           {learningPoints.map((point) => (
             <li key={point}>
-              <span className="text-black">{point}</span>
+              <span className="text-[var(--text-primary)]">{point}</span>
             </li>
           ))}
         </ul>
 
         <p className="font-semibold mb-2 text-left">
-          Tools used:
+          Gebruikte technieken:
         </p>
 
         <div className="flex flex-wrap gap-2">

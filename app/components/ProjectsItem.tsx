@@ -15,7 +15,7 @@ export default function ProjectsItem({
   href,
 }: ProjectsItem) {
   return (
-    <div className="max-w-sm bg-white rounded-xl border-2 border-t-4 border-[var(--accent)] shadow-xl/30 overflow-hidden">
+    <div className="max-w-sm bg-[var(--surface)] rounded-xl border-2 border-t-4 border-[var(--accent)] shadow-xl/30 overflow-hidden">
 
       <Link href={href} className="block">
 
@@ -25,7 +25,7 @@ export default function ProjectsItem({
           alt={title}
           width={400}
           height={220}
-          className="w-full h-52 object-cover border-b-4 border-[var(--detail)]]"
+          className="w-full h-52 object-cover border-b-4 border-[var(--detail)] object-cover "
         />
 
         {/* Content */}

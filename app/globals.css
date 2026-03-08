@@ -24,62 +24,9 @@ body {
   --foreground: #000000;
   --accent: #000000;
   --detail: #000000;
-
-  /* Seasonal Effect Tokens */
-  --snow-opacity: 0;
-  --snow-color: #ffffff;
-  --snow-blur: 0px;
-  --snow-speed-multiplier: 0;
-}
-
-/* =========================================================
-   SPRING - LIGHT
-========================================================= */
-
-:root[data-season="spring"][data-theme="light"] {
-  --background: #ffddf0;
-  --foreground: #3f3f46;
-  --accent: #ec4899;
-  --detail: #d61575;
-}
-
-/* =========================================================
-   SUMMER - LIGHT
-========================================================= */
-
-:root[data-season="summer"][data-theme="light"] {
-  --background: #fffbea;
-  --foreground: #ffffff;
-  --accent: #facc15;
-  --detail: #967a0d;
-}
-
-/* =========================================================
-   AUTUMN - LIGHT
-========================================================= */
-
-:root[data-season="autumn"][data-theme="light"] {
-  --background: #fff7ed;
-  --foreground: #3f1d0d;
-  --accent: #ea580c;
-  --detail: #b03f02;
-}
-
-/* =========================================================
-   WINTER - LIGHT
-========================================================= */
-
-:root[data-season="winter"][data-theme="light"] {
-  --background: #f0f9ff;
-  --foreground: #0f172a;
-  --accent: #38bdf8;
-  --detail: #0c8bc2;
-
-  /* Snow enabled */
-  --snow-opacity: 1;
-  --snow-color: #ffffff;
-  --snow-blur: 0.5px;
-  --snow-speed-multiplier: 1;
+  --text-primary: #000000;
+  --text-secondary: #000000;
+  --surface: #000000;
 }
 
 /* =========================================================
@@ -87,10 +34,13 @@ body {
 ========================================================= */
 
 :root[data-season="spring"][data-theme="dark"] {
-  --background: #3b2b6e;
-  --foreground: #f8eafd;
-  --accent: #e87ab9;
-  --detail: #c2478d;
+  --background: #141016;
+  --foreground: #FF7FAF;
+  --accent: #5ED49A;
+  --detail: #3A2630;
+  --text-primary: #F6EAF0;
+  --text-secondary: #C7A6B5;
+  --surface: #1E1620;
 }
 
 /* =========================================================
@@ -98,10 +48,13 @@ body {
 ========================================================= */
 
 :root[data-season="summer"][data-theme="dark"] {
-  --background: #846d28;
-  --foreground: #f5f3e6;
-  --accent: #f5c94a;
-  --detail: #efbb20;
+  --background: #15130C;
+  --foreground: #FFD166;
+  --accent: #3EDAD0;
+  --detail: #3A3215;
+  --text-primary: #FFF6D6;
+  --text-secondary: #CFC28A;
+  --surface: #1F1A10;
 }
 
 /* =========================================================
@@ -109,10 +62,13 @@ body {
 ========================================================= */
 
 :root[data-season="autumn"][data-theme="dark"] {
-  --background: #50280f;
-  --foreground: #fbeee0;
-  --accent: #f97316;
-  --detail: #d25801;
+  --background: #16110D;
+  --foreground: #FF8C42;
+  --accent: #3E8F4F;
+  --detail: #3A2518;
+  --text-primary: #FFE8D8;
+  --text-secondary: #C7A08A;
+  --surface: #1F1712;
 }
 
 /* =========================================================
@@ -120,42 +76,71 @@ body {
 ========================================================= */
 
 :root[data-season="winter"][data-theme="dark"] {
-  --background: #040f3d;
-  --foreground: #e5f2ff;
-  --accent: #60a5fa;
-  --detail: #1074ef;
+  --background: #0E141C;
+  --foreground: #5AA9FF;
+  --accent: #8BE9FF;
+  --detail: #1E2A3A;
+  --text-primary: #EAF4FF;
+  --text-secondary: #9FB4CC;
+  --surface: #151E2A;
 
-  /* Snow enabled */
-  --snow-opacity: 0.85;
-  --snow-color: #e5f2ff;
-  --snow-blur: 1px;
-  --snow-speed-multiplier: 1;
 }
 
 /* =========================================================
-   GLOBAL APPLICATION
+   SPRING - LIGHT
 ========================================================= */
 
-body {
-  
+:root[data-season="spring"][data-theme="light"] {
+  --background: #FFF4F8;
+  --foreground: #FF6FA3;
+  --accent: #6BCB8E;
+  --detail: #F3C9D7;
+  --text-primary: #3A1F2E;
+  --text-secondary: #8A5A6E;
+  --surface: #FFE4EC;
+
 }
 
+/* =========================================================
+   SUMMER - LIGHT
+========================================================= */
 
-/* @layer utilities {
-  @keyframes roll {
-    0% {
-      opacity: 1;
-      transform: rotate(0deg);
-      
-    }
+:root[data-season="summer"][data-theme="light"] {
+  --background: #FFFBEA;
+  --foreground: #FFC93C;
+  --accent: #2EC4B6;
+  --detail: #F1D97A;
+  --text-primary: #3A2F12;
+  --text-secondary: #7A6B3D;
+  --surface: #FFF1B8;
+}
 
-    100% {
-      opacity: 1;
-      transform: rotate(360deg);
-    }
-  }
+/* =========================================================
+   AUTUMN - LIGHT
+========================================================= */
 
-  .animate-fade-in-up {
-    animation: roll .3s infinite ease-in-out;
-  }
-} */
+:root[data-season="autumn"][data-theme="light"] {
+  --background: #FFF4EC;
+  /* deep brown */
+  --foreground: #E76F2A;
+  --accent: #2F6B3D;
+  --detail: #E6B79C;
+  --text-primary: #3B2415;
+  --text-secondary: #7A4A2A;
+  --surface: #FFE0CC;
+
+}
+
+/* =========================================================
+   WINTER - LIGHT
+========================================================= */
+
+:root[data-season="winter"][data-theme="light"] {
+  --background: #F3F8FF;
+  --foreground: #3A86FF;
+  --accent: #72D6FF;
+  --detail: #C9D8F0;
+  --text-primary: #1B2A41;
+  --text-secondary: #5C6F91;
+  --surface: #E1EDFF;
+}
