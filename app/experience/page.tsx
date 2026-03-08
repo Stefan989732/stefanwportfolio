@@ -194,7 +194,7 @@ export default function Experience() {
                     </h2>
                 </div>
 
-                <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 border-2 border-r-4 border-[var(--accent)]">
+                <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 border-2 border-t-4 border-[var(--accent)]">
                     <div className="flex flex-col md:flex-row gap-6">
 
                         <div className="flex-1">
@@ -222,7 +222,7 @@ export default function Experience() {
                                 src="/Moeder.JPG"
                                 width={200}
                                 height={200}
-                                className="rounded-xl object-cover object-[50%_20%]"
+                                className="rounded-xl object-cover object-[50%_20%] border-[var(--detail)] border-2"
                                 alt="Moeder"
                             />
                         </div>
