@@ -87,7 +87,7 @@ export default function Home() {
 }, []);
 
   return (
-    <Navbar className="bg-gray-800 p-4 flex fixed text-white z-50">
+    <Navbar className="bg-gray-800 p-4 flex fixed text-white z-50 w-full justify-between" >
        <NavbarContent justify="start">
 
         {/* ===== IF MOBILE ===== */}
@@ -136,7 +136,7 @@ export default function Home() {
           </div>
         )}
       </NavbarContent>
-      <NavbarContent className="shadow-xl/30 sm:flex gap-0">
+      <NavbarContent justify="end" className="shadow-xl/30 sm:flex gap-0">
         <NavbarItem>
           <Link
             onClick={() => setSelected('spring')}
