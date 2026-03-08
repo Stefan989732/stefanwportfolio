@@ -35,7 +35,7 @@ export default function PortfolioItem({
 
       <div className="p-4 sm:p-6">
 
-        <p className="rounded-xl w-fit px-3 py-1 text-xs sm:text-sm bg-gradient-to-r from-[var(--accent)] to-[var(--detail)] text-white mb-3">
+        <p className="rounded-xl w-fit px-3 py-1 text-[var(--surface)] text-xs sm:text-sm bg-gradient-to-r from-[var(--accent)] to-[var(--foreground)] mb-3">
           {type}
         </p>
 
@@ -77,7 +77,7 @@ export default function PortfolioItem({
           {tags.map((tag) => (
             <span
               key={tag}
-              className="rounded-xl px-3 py-1 text-xs sm:text-sm bg-gradient-to-r from-[var(--accent)] to-[var(--detail)] text-white"
+              className="rounded-xl px-3 py-1 text-xs sm:text-sm bg-gradient-to-r from-[var(--accent)] to-[var(--foreground)] text-[var(--surface)]"
             >
               {tag}
             </span>

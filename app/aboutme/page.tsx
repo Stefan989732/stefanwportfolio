@@ -36,55 +36,59 @@ export default function aboutme() {
                 </div>
             </div>
             <div className="px-4 md:px-6 flex flex-col items-center gap-10">
-                <div className="bg-[var(--surface)] w-full max-w-6xl rounded-xl shadow-xl border-2 border-t-4 border-[var(--accent)] py-8 md:py-12 px-6 md:px-10">
-                    <h1 className="text-4xl justify-center flex pb-12">Wat mij drijft</h1>
-                    <div className="flex justify-evenly">
-                        <div><FaPeopleGroup className="border-4 p-3 border-[var(--detail)] rounded-full h-32 w-32 bg-[var(--accent)]" />
-                            <p className="flex justify-center pt-4">werken met mensen<br /> voor een positieve<br /> sociale impact</p>
-                        </div>
-                        <div><FaPaintBrush className="border-4 p-6 border-[var(--detail)] rounded-full h-32 w-32 bg-[var(--accent)] overflow-visible" />
-                            <p className="flex justify-center pt-4">Creatief werk <br /> doen</p>
-                        </div>
-                        <div><FaStar className="border-4 p-3 border-[var(--detail)] rounded-full h-32 w-32 bg-[var(--accent)] overflow-visible" />
-                            <p className="flex justify-center pt-4">mezelf blijven <br /> ontwikkelen</p>
-                        </div>
-                    </div>
-                </div>
+    <div className="bg-[var(--surface)] w-full max-w-6xl rounded-xl shadow-xl border-2 border-t-4 border-[var(--accent)] py-8 md:py-12 px-6 md:px-10">
+        <h1 className="text-4xl justify-center flex pb-12">Wat mij drijft</h1>
+        <div className="flex flex-col md:flex-row md:gap-12 lg:gap-20 justify-center items-center">
+            <div className="flex flex-col items-center gap-4 mb-8 md:mb-0">
+                <FaPeopleGroup className="border-4 p-3 border-[var(--detail)] rounded-full h-32 w-32 bg-[var(--accent)] overflow-visible" />
+                <p className="text-center max-w-xs leading-tight">werken met mensen om een positieve sociale impact te maken.</p>
             </div>
+            <div className="flex flex-col items-center gap-4 mb-8 md:mb-0">
+                <FaPaintBrush className="border-4 p-6 border-[var(--detail)] rounded-full h-32 w-32 bg-[var(--accent)] overflow-visible" />
+                <p className="text-center max-w-xs leading-tight">Creatief werk doen dat mijn passie voor design en development voedt.</p>
+            </div>
+            <div className="flex flex-col items-center gap-4 mb-8 md:mb-0">
+                <FaStar className="border-4 p-3 border-[var(--detail)] rounded-full h-32 w-32 bg-[var(--accent)] overflow-visible" />
+                <p className="text-center max-w-xs leading-tight">Mezelf blijven ontwikkelen door nieuwe technologieën en vaardigheden te leren</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 
             <div className="text-[var(--text-primary)] text-4xl justify-center flex py-12">buiten werk</div>
             <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-4">
                 <div className="bg-[var(--surface)] rounded-xl shadow-lg py-6 md:py-8 border-2 border-t-4 border-[var(--accent)]">
                     <h1 className="border-b-2 border-[var(--accent)] text-4xl justify-center flex">Sport</h1>
-                    <p className="justify-center flex p-4">Ik sport ongeveer vier keer per week om zowel fysiek als mentaal sterk te blijven. 
+                    <p className="justify-center flex p-4">Ik sport ongeveer vier keer per week om zowel fysiek als mentaal sterk te blijven.
                         Het helpt mij discipline op te bouwen en consistent aan mijn doelen te werken.</p>
                 </div>
                 <div className="bg-[var(--surface)] rounded-xl shadow-lg py-6 md:py-8 border-2 border-t-4 border-[var(--accent)]">
                     <h1 className="border-b-2 border-[var(--accent)] text-4xl justify-center flex">Cosplay</h1>
-                    <p className="p-4">Momenteel werk ik aan mijn eerste cosplayproject. 
+                    <p className="p-4">Momenteel werk ik aan mijn eerste cosplayproject.
                         Dit geeft mij de kans om creativiteit, probleemoplossend denken en oog voor detail te combineren.</p>
                 </div>
                 <div className="bg-[var(--surface)] rounded-xl shadow-lg py-6 md:py-8 border-2 border-t-4 border-[var(--accent)]">
                     <h1 className="border-b-2 border-[var(--accent)] text-4xl justify-center flex">Wandelen</h1>
-                    <p className="p-4">Wandelen helpt mij om mijn hoofd leeg te maken en nieuwe energie op te doen. 
+                    <p className="p-4">Wandelen helpt mij om mijn hoofd leeg te maken en nieuwe energie op te doen.
                         Het is een moment waarop ik kan reflecteren en met een frisse blik verder kan.</p>
                 </div>
                 <div className="bg-[var(--surface)] rounded-xl shadow-lg py-6 md:py-8 border-2 border-t-4 border-[var(--accent)]">
                     <h1 className="border-b-2 border-[var(--accent)] text-4xl justify-center flex">Koken</h1>
-                    <p className="p-4">Koken geeft mij de ruimte om creatief te zijn en nieuwe dingen uit te proberen. 
+                    <p className="p-4">Koken geeft mij de ruimte om creatief te zijn en nieuwe dingen uit te proberen.
                         Ik vind het leuk om gerechten te maken waar anderen van kunnen genieten.</p>
                 </div>
                 <div className="bg-[var(--surface)] rounded-xl shadow-lg py-6 md:py-8 border-2 border-t-4 border-[var(--accent)]">
                     <h1 className="border-b-2 border-[var(--accent)] text-4xl justify-center flex">Gamen</h1>
-                    <p className="p-4">Gamen doe ik vaak samen met vrienden, waarbij samenwerken en communicatie centraal staan. 
+                    <p className="p-4">Gamen doe ik vaak samen met vrienden, waarbij samenwerken en communicatie centraal staan.
                         Het is een leuke manier om strategie en teamwork te combineren.</p>
                 </div>
                 <div className="bg-[var(--surface)] rounded-xl shadow-lg py-6 md:py-8 border-2 border-t-4 border-[var(--accent)]">
                     <h1 className="border-b-2 border-[var(--accent)] text-4xl justify-center flex">Tekenen en 3D</h1>
-                    <p className="p-4">Ik werk graag met digitale tools om ideeën visueel tot leven te brengen. 
+                    <p className="p-4">Ik werk graag met digitale tools om ideeën visueel tot leven te brengen.
                         Het helpt mij mijn creativiteit te ontwikkelen en nieuwe technieken te leren.</p>
+                </div>
             </div>
-        </div>
         </div>
     )
 }

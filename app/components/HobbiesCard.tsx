@@ -11,7 +11,7 @@ export default function HobbiesCard() {
       />
       <HobbiesItem
         title="Cosplay"
-        image="/Cosplay.jpg"
+        image="/cosplay.jpg"
         description="Ik ben altijd creatief ingesteld en ben recentelijk meer bezig met cosplay, op dit moment ben ik bezig met mijn eerste cosplay zelf te maken."
       />
       <HobbiesItem
