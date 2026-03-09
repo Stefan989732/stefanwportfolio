@@ -153,7 +153,7 @@ export default function Experience() {
                             <div><GoDotFill className="inline text-[var(--foreground)]" /> Problemen herkennen</div>
                             <div><GoDotFill className="inline text-[var(--foreground)]" /> Vragen stellen</div>
                         </div>
-                    </div>foreground
+                    </div>
                 </div>
 
                 {/* OTHER EXPERIENCE */}

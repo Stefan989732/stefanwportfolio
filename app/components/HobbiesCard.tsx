@@ -7,7 +7,7 @@ export default function HobbiesCard() {
       <HobbiesItem
         title="Gaming"
         image="/Gaming.jpg"
-        description="Doe graag aan gamen met vrienden in verschillende team based games. Daarnaast doe ik ook graag co-op puzzle games met vrienden."
+        description="Ik speel graag games met vrienden in verschillende team based games. Daarnaast doe ik ook graag co-op puzzle games met vrienden."
       />
       <HobbiesItem
         title="Cosplay"

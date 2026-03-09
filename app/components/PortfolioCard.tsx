@@ -104,8 +104,8 @@ export default function PortfolioCard() {
             />
 
 
-            <p className="flex justify-center text-6xl text-[var(--text-primary)] gap-2 pt-8 col-span-full">Overige Projecten</p>
-            <p className="flex justify-center text-2xl text-[var(--text-secondary)] gap-2 pb-8 col-span-full">Dit zijn wat overige projecten</p>
+            <p className="flex justify-center text-6xl text-[var(--text-primary)] gap-2 pt-12 col-span-full">Overige Projecten</p>
+            <p className="flex justify-center text-2xl text-[var(--text-secondary)] gap-2 pb-6  col-span-full">Dit zijn wat overige projecten</p>
 
             <PortfolioItem
                 title="ITP generator"

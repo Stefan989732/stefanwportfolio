@@ -42,7 +42,8 @@ export default function Contact() {
         <div className='px-3 text-[var(--text-primary)] grid md:grid-cols-2 sm-grid-cols-1 items-center gap-8'>
             <section className="bg-[var(--surface)] rounded-xl shadow-xl/30 border-2 border-t-4 border-[var(--accent)] py-12">
                 <div className="p-6">
-                    <h1 className="font-semibold text-2xl mb-6">contact</h1>
+                    <h1 className="font-semibold text-4xl">contact</h1>
+                    <p className="font-semibold text-xl mb-6 text-[var(--text-secondary)]">Neem gerust contact op, ik reageer meestal binnen 24 uur op emails</p>
 
                     <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                         <input

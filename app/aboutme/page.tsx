@@ -56,39 +56,41 @@ export default function aboutme() {
 </div>
 
 
-            <div className="text-[var(--text-primary)] text-4xl justify-center flex py-12">buiten werk</div>
-            <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-4">
-                <div className="bg-[var(--surface)] rounded-xl shadow-lg py-6 md:py-8 border-2 border-t-4 border-[var(--accent)]">
-                    <h1 className="border-b-2 border-[var(--accent)] text-4xl justify-center flex">Sport</h1>
-                    <p className="justify-center flex p-4">Ik sport ongeveer vier keer per week om zowel fysiek als mentaal sterk te blijven.
-                        Het helpt mij discipline op te bouwen en consistent aan mijn doelen te werken.</p>
-                </div>
-                <div className="bg-[var(--surface)] rounded-xl shadow-lg py-6 md:py-8 border-2 border-t-4 border-[var(--accent)]">
-                    <h1 className="border-b-2 border-[var(--accent)] text-4xl justify-center flex">Cosplay</h1>
-                    <p className="p-4">Momenteel werk ik aan mijn eerste cosplayproject.
-                        Dit geeft mij de kans om creativiteit, probleemoplossend denken en oog voor detail te combineren.</p>
-                </div>
-                <div className="bg-[var(--surface)] rounded-xl shadow-lg py-6 md:py-8 border-2 border-t-4 border-[var(--accent)]">
-                    <h1 className="border-b-2 border-[var(--accent)] text-4xl justify-center flex">Wandelen</h1>
-                    <p className="p-4">Wandelen helpt mij om mijn hoofd leeg te maken en nieuwe energie op te doen.
-                        Het is een moment waarop ik kan reflecteren en met een frisse blik verder kan.</p>
-                </div>
-                <div className="bg-[var(--surface)] rounded-xl shadow-lg py-6 md:py-8 border-2 border-t-4 border-[var(--accent)]">
-                    <h1 className="border-b-2 border-[var(--accent)] text-4xl justify-center flex">Koken</h1>
-                    <p className="p-4">Koken geeft mij de ruimte om creatief te zijn en nieuwe dingen uit te proberen.
-                        Ik vind het leuk om gerechten te maken waar anderen van kunnen genieten.</p>
-                </div>
-                <div className="bg-[var(--surface)] rounded-xl shadow-lg py-6 md:py-8 border-2 border-t-4 border-[var(--accent)]">
-                    <h1 className="border-b-2 border-[var(--accent)] text-4xl justify-center flex">Gamen</h1>
-                    <p className="p-4">Gamen doe ik vaak samen met vrienden, waarbij samenwerken en communicatie centraal staan.
-                        Het is een leuke manier om strategie en teamwork te combineren.</p>
-                </div>
-                <div className="bg-[var(--surface)] rounded-xl shadow-lg py-6 md:py-8 border-2 border-t-4 border-[var(--accent)]">
-                    <h1 className="border-b-2 border-[var(--accent)] text-4xl justify-center flex">Tekenen en 3D</h1>
-                    <p className="p-4">Ik werk graag met digitale tools om ideeën visueel tot leven te brengen.
-                        Het helpt mij mijn creativiteit te ontwikkelen en nieuwe technieken te leren.</p>
-                </div>
-            </div>
+            <div className="text-[var(--text-primary)] text-4xl justify-center flex pb-6 pt-12">Buiten werk</div>
+            <div className="px-4 md:px-6 flex flex-col items-center gap-10">
+    <div className="w-full max-w-6xl grid md:grid-cols-3 sm:grid-cols-2 gap-6">
+        <div className="bg-[var(--surface)] rounded-xl shadow-lg py-6 md:py-8 border-2 border-t-4 border-[var(--accent)]">
+            <h1 className="border-b-2 border-[var(--accent)] text-4xl justify-center flex pb-2">Sport</h1>
+            <p className="justify-center flex p-4">Ik sport ongeveer vier keer per week om zowel fysiek als mentaal sterk te blijven.
+                Het helpt mij discipline op te bouwen en consistent aan mijn doelen te werken.</p>
         </div>
+        <div className="bg-[var(--surface)] rounded-xl shadow-lg py-6 md:py-8 border-2 border-t-4 border-[var(--accent)]">
+            <h1 className="border-b-2 border-[var(--accent)] text-4xl justify-center flex pb-2">Cosplay</h1>
+            <p className="p-4">Momenteel werk ik aan mijn eerste cosplayproject.
+                Dit geeft mij de kans om creativiteit, probleemoplossend denken en oog voor detail te combineren.</p>
+        </div>
+        <div className="bg-[var(--surface)] rounded-xl shadow-lg py-6 md:py-8 border-2 border-t-4 border-[var(--accent)]">
+            <h1 className="border-b-2 border-[var(--accent)] text-4xl justify-center flex pb-2">Wandelen</h1>
+            <p className="p-4">Wandelen helpt mij om mijn hoofd leeg te maken en nieuwe energie op te doen.
+                Het is een moment waarop ik kan reflecteren en met een frisse blik verder kan.</p>
+        </div>
+        <div className="bg-[var(--surface)] rounded-xl shadow-lg py-6 md:py-8 border-2 border-t-4 border-[var(--accent)]">
+            <h1 className="border-b-2 border-[var(--accent)] text-4xl justify-center flex pb-2">Koken</h1>
+            <p className="p-4">Koken geeft mij de ruimte om creatief te zijn en nieuwe dingen uit te proberen.
+                Ik vind het leuk om gerechten te maken waar anderen van kunnen genieten.</p>
+        </div>
+        <div className="bg-[var(--surface)] rounded-xl shadow-lg py-6 md:py-8 border-2 border-t-4 border-[var(--accent)]">
+            <h1 className="border-b-2 border-[var(--accent)] text-4xl justify-center flex pb-2">Gamen</h1>
+            <p className="p-4">Gamen doe ik vaak samen met vrienden, waarbij samenwerken en communicatie centraal staan.
+                Het is een leuke manier om strategie en teamwork te combineren.</p>
+        </div>
+        <div className="bg-[var(--surface)] rounded-xl shadow-lg py-6 md:py-8 border-2 border-t-4 border-[var(--accent)]">
+            <h1 className="border-b-2 border-[var(--accent)] text-4xl justify-center flex pb-2">Tekenen en 3D</h1>
+            <p className="p-4">Ik werk graag met digitale tools om ideeën visueel tot leven te brengen.
+                Het helpt mij mijn creativiteit te ontwikkelen en nieuwe technieken te leren.</p>
+        </div>
+    </div>
+</div>
+</div>
     )
 }
