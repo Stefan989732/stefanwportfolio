@@ -24,10 +24,10 @@ export default function Experience() {
 
                         {/* Coderdojo */}
                         <div className="relative flex items-start gap-4">
-                            <div className="absolute -left-8 md:-left-10 top-6 w-5 h-5 bg-[var(--detail)] rounded-full border-4 border-white shadow-md flex-shrink-0" />
+                            <div className="absolute -left-8 md:-left-10 top-6 w-5 h-5 bg-[var(--foreground)] rounded-full border-4 border-white shadow-md flex-shrink-0" />
                             <div className="bg-[var(--surface)] rounded-xl shadow-lg p-6 md:p-8 border-2 border-l-4 border-[var(--accent)] flex-1">
                                 <h3 className="text-xl md:text-2xl font-semibold mb-2">
-                                    Vrijwilligerswerk — Coderdojo
+                                    Vrijwilligerswerk — <p className="text-[var(--foreground)] inline">Coderdojo</p>
                                 </h3>
                                 <p className="text-[var(--text-secondary)]">
                                     <CiCalendar className="inline" /> nov 2021 - heden
@@ -42,20 +42,20 @@ export default function Experience() {
                                 </p>
                                 <p className="font-semibold mb-3">Verantwoordelijkheden:</p>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-                                    <div><GoDotFill className="inline text-[var(--detail)]" /> Kinderen helpen met coderen</div>
-                                    <div><GoDotFill className="inline text-[var(--detail)]" /> Ouders te woord staan</div>
-                                    <div><GoDotFill className="inline text-[var(--detail)]" /> Toezicht houden</div>
-                                    <div><GoDotFill className="inline text-[var(--detail)]" /> Informeren over programmeren</div>
+                                    <div><GoDotFill className="inline text-[var(--foreground)]" /> Kinderen helpen met coderen</div>
+                                    <div><GoDotFill className="inline text-[var(--foreground)]" /> Ouders te woord staan</div>
+                                    <div><GoDotFill className="inline text-[var(--foreground)]" /> Toezicht houden</div>
+                                    <div><GoDotFill className="inline text-[var(--foreground)]" /> Informeren over programmeren</div>
                                 </div>
                             </div>
                         </div>
 
                         {/* JRCZ */}
                         <div className="relative flex items-start gap-4">
-                            <div className="absolute -left-8 md:-left-10 top-6 w-5 h-5 bg-[var(--detail)] rounded-full border-4 border-white shadow-md flex-shrink-0" />
+                            <div className="absolute -left-8 md:-left-10 top-6 w-5 h-5 bg-[var(--foreground)] rounded-full border-4 border-white shadow-md flex-shrink-0" />
                             <div className="bg-[var(--surface)] rounded-xl shadow-lg p-6 md:p-8 border-2 border-l-4 border-[var(--accent)] flex-1">
                                 <h3 className="text-xl md:text-2xl font-semibold mb-2">
-                                    Stagiair — JRCZ
+                                    Stagiair — <p className="text-[var(--foreground)] inline">JRCZ</p>
                                 </h3>
                                 <p className="text-[var(--text-secondary)]">
                                     <CiCalendar className="inline" /> feb 2024 - jul 2024
@@ -70,21 +70,21 @@ export default function Experience() {
                                 </p>
                                 <p className="font-semibold mb-3">Verantwoordelijkheden:</p>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-                                    <div><GoDotFill className="inline text-[var(--detail)]" /> Game design</div>
-                                    <div><GoDotFill className="inline text-[var(--detail)]" /> Playtests met studenten</div>
-                                    <div><GoDotFill className="inline text-[var(--detail)]" /> C# development</div>
-                                    <div><GoDotFill className="inline text-[var(--detail)]" /> Probleemanalyse</div>
-                                    <div><GoDotFill className="inline text-[var(--detail)]" /> Documentatie</div>
+                                    <div><GoDotFill className="inline text-[var(--foreground)]" /> Game design</div>
+                                    <div><GoDotFill className="inline text-[var(--foreground)]" /> Playtests met studenten</div>
+                                    <div><GoDotFill className="inline text-[var(--foreground)]" /> C# development</div>
+                                    <div><GoDotFill className="inline text-[var(--foreground)]" /> Probleemanalyse</div>
+                                    <div><GoDotFill className="inline text-[var(--foreground)]" /> Documentatie</div>
                                 </div>
                             </div>
                         </div>
 
                         {/* Enovation */}
                         <div className="relative flex items-start gap-4">
-                            <div className="absolute -left-8 md:-left-10 top-6 w-5 h-5 bg-[var(--detail)] rounded-full border-4 border-white shadow-md" />
+                            <div className="absolute -left-8 md:-left-10 top-6 w-5 h-5 bg-[var(--foreground)] rounded-full border-4 border-white shadow-md" />
                             <div className="bg-[var(--surface)] rounded-xl shadow-lg p-6 md:p-8 border-2 border-l-4 border-[var(--accent)] flex-1">
                                 <h3 className="text-xl md:text-2xl font-semibold mb-2">
-                                    Stagiair — Enovation
+                                    Stagiair — <p  className="text-[var(--foreground)] inline">Enovation</p>
                                 </h3>
                                 <p className="text-[var(--text-secondary)]">
                                     <CiCalendar className="inline" /> feb 2023 - jul 2023
@@ -99,10 +99,10 @@ export default function Experience() {
                                 </p>
                                 <p className="font-semibold mb-3">Verantwoordelijkheden:</p>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-                                    <div><GoDotFill className="inline text-[var(--detail)]" /> Design basis maken</div>
-                                    <div><GoDotFill className="inline text-[var(--detail)]" /> Analyse oud systeem</div>
-                                    <div><GoDotFill className="inline text-[var(--detail)]" /> PHP development</div>
-                                    <div><GoDotFill className="inline text-[var(--detail)]" /> Feedback verwerken</div>
+                                    <div><GoDotFill className="inline text-[var(--foreground)]" /> Design basis maken</div>
+                                    <div><GoDotFill className="inline text-[var(--foreground)]" /> Analyse oud systeem</div>
+                                    <div><GoDotFill className="inline text-[var(--foreground)]" /> PHP development</div>
+                                    <div><GoDotFill className="inline text-[var(--foreground)]" /> Feedback verwerken</div>
                                 </div>
                             </div>
                         </div>
@@ -130,10 +130,10 @@ export default function Experience() {
                             <CiLocationOn className="inline" /> Middelburg
                         </p>
                         <div className="grid grid-cols-2 gap-2">
-                            <div><GoDotFill className="inline text-[var(--detail)]" /> Agile werken</div>
-                            <div><GoDotFill className="inline text-[var(--detail)]" /> Teamrollen</div>
-                            <div><GoDotFill className="inline text-[var(--detail)]" /> Teamwork</div>
-                            <div><GoDotFill className="inline text-[var(--detail)]" /> Hulp zoeken</div>
+                            <div><GoDotFill className="inline text-[var(--foreground)]" /> Agile werken</div>
+                            <div><GoDotFill className="inline text-[var(--foreground)]" /> Teamrollen</div>
+                            <div><GoDotFill className="inline text-[var(--foreground)]" /> Teamwork</div>
+                            <div><GoDotFill className="inline text-[var(--foreground)]" /> Hulp zoeken</div>
                         </div>
                     </div>
 
@@ -148,12 +148,12 @@ export default function Experience() {
                             <CiLocationOn className="inline" /> Vlissingen
                         </p>
                         <div className="grid grid-cols-2 gap-2">
-                            <div><GoDotFill className="inline text-[var(--detail)]" /> Luisteren</div>
-                            <div><GoDotFill className="inline text-[var(--detail)]" /> Observeren</div>
-                            <div><GoDotFill className="inline text-[var(--detail)]" /> Problemen herkennen</div>
-                            <div><GoDotFill className="inline text-[var(--detail)]" /> Vragen stellen</div>
+                            <div><GoDotFill className="inline text-[var(--foreground)]" /> Luisteren</div>
+                            <div><GoDotFill className="inline text-[var(--foreground)]" /> Observeren</div>
+                            <div><GoDotFill className="inline text-[var(--foreground)]" /> Problemen herkennen</div>
+                            <div><GoDotFill className="inline text-[var(--foreground)]" /> Vragen stellen</div>
                         </div>
-                    </div>
+                    </div>foreground
                 </div>
 
                 {/* OTHER EXPERIENCE */}

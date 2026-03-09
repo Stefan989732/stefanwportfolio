@@ -94,8 +94,8 @@ export default function Contact() {
 
             <section className="bg-[var(--surface)] rounded-xl shadow-xl/30 border-2 border-t-4 border-[var(--accent)] py-12">
                 <div className="p-4">
-                    <p className="pb-4"><MdEmail className="inline h-8 w-8" />Stefan.wurpel@hotmail.com</p>
-                    <p className="py-4"><a target="blank" href="https://www.linkedin.com/in/stefan-wurpel-4890bb215/"><FaLinkedin className="inline h-8 w-8" />Stefan Wurpel</a></p>
+                    <p className="pb-4"><MdEmail className="inline h-8 w-8" /> Stefan.wurpel@hotmail.com</p>
+                    <p className="py-4"><a target="blank" href="https://www.linkedin.com/in/stefan-wurpel-4890bb215/"><FaLinkedin className="inline h-8 w-8" /> Stefan Wurpel</a></p>
                     <p className="py-4"><FaPhoneSquareAlt className="inline h-8 w-8" /> +31681849719</p>
                     <p className="pt-4"><MdLocationPin className="inline h-8 w-8" /> Bergen op Zoom, Nederland</p>
                 </div>

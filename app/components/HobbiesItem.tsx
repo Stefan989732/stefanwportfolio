@@ -23,7 +23,7 @@ export default function HobbiesItem({
               className="w-full h-52 object-cover border-b-4 border-[var(--detail)] object-cover object-[50%_35%]"
             />
     <div className="p-6 text-center">
-          <h3 className="text-xl font-semibold mb-3">{title}</h3>
+          <h3 className="text-xl font-semibold mb-3 text-[var(--foreground)]">{title}</h3>
 
           <p className="text-sm mb-4">
             {description}

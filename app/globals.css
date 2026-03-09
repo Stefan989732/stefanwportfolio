@@ -121,7 +121,6 @@ body {
 
 :root[data-season="autumn"][data-theme="light"] {
   --background: #FFF4EC;
-  /* deep brown */
   --foreground: #E76F2A;
   --accent: #2F6B3D;
   --detail: #E6B79C;

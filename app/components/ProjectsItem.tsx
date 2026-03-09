@@ -30,13 +30,13 @@ export default function ProjectsItem({
 
         {/* Content */}
         <div className="p-6 text-center">
-          <h3 className="text-xl font-semibold mb-3">{title}</h3>
+          <h3 className="text-xl font-semibold mb-3 text-[var(--foreground)]">{title}</h3>
 
           <p className="text-sm mb-4">
             {description}
           </p>
 
-          <button className="border px-4 py-2 rounded-xl bg-[var(--detail)]">
+          <button className="hover:scale-105 transition-transform cursor-pointer border px-4 py-2 rounded-xl bg-[var(--detail)]">
             Lees meer
           </button>
         </div>

@@ -2,7 +2,7 @@ import PortfolioItem from "./PortfolioItem";
 
 export default function PortfolioCard() {
     return (
-        <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 justify-center mb-8 text-[var(--text-primary)] ">
+        <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6 justify-center mb-8 text-[var(--text-primary)]">
             <PortfolioItem
                 title="Verpleegkunde Game"
                 image="/verpleegkundeGame.png"

@@ -39,17 +39,17 @@ export default function Home() {
         </div>
 
       </section>
-      <div className="flex items-center text-4xl text-[var(--text-secondary)] gap-2 py-8">
+      <div className="flex items-center text-4xl text-[var(--text-secondary)] gap-2 pb-6 pt-12">
         <Divider />Skills<Divider />
         </div>
 
       <SkillsSection />
 
-      <div className="flex items-center text-4xl text-[var(--text-secondary)] gap-2 py-8"><Divider />Projecten<Divider /></div>
+      <div className="flex items-center text-4xl text-[var(--text-secondary)] gap-2 pb-6 pt-12"><Divider />Projecten<Divider /></div>
 
       <ProjectsCard />
 
-      <div className="flex items-center text-4xl text-[var(--text-secondary)] gap-2 py-8"><Divider /><h1>Hobby's</h1><Divider /></div>
+      <div className="flex items-center text-4xl text-[var(--text-secondary)] gap-2 pb-6 pt-12"><Divider /><h1>Hobby's</h1><Divider /></div>
 
       <HobbiesCard />
 

@@ -39,7 +39,7 @@ export default function PortfolioItem({
           {type}
         </p>
 
-        <h3 className="text-xl sm:text-2xl font-semibold mb-3">
+        <h3 className="text-xl sm:text-2xl font-semibold mb-3 text-[var(--foreground)]">
           {title}
         </h3>
 
