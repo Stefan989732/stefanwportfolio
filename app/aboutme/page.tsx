@@ -20,11 +20,11 @@ export default function aboutme() {
                     />
                 </div>
                 <div className="md:max-w-2xl sm:max-w-l text-[var(--text-primary)]"><p className="py-6 sm:py-8 md:py-12">Van jongs af aan haal ik veel voldoening uit het helpen van anderen.
-                    Of het nu gaat om iemand ondersteunen, een probleem oplossen of iets maken waar anderen echt iets aan hebben —
+                    Of het nu gaat om iemand steuenen tijdens een moeilijke periode, een probleem oplossen of iets maken waar anderen echt iets aan hebben,
                     dat geeft mij energie. Die drang om waarde toe te voegen aan het leven van anderen vormt nog steeds de basis van wat ik doe.
                     <br /><br />
                     Daarnaast ben ik al lange tijd gefascineerd door design en creativiteit.
-                    Het proces van een idee omzetten naar iets tastbaars — een ontwerp, een interface of een digitale ervaring — blijft voor mij bijzonder.
+                    Het proces van een idee omzetten naar iets tastbaars, een ontwerp, een interface of een digitale ervaring, blijft voor mij bijzonder.
                     Ik vind het interessant om te zoeken naar oplossingen die niet alleen goed werken, maar er ook prettig en doordacht uitzien.
                     <br /><br />
                     Mijn pad is niet altijd eenvoudig geweest.
@@ -41,7 +41,7 @@ export default function aboutme() {
         <div className="flex flex-col md:flex-row md:gap-12 lg:gap-20 justify-center items-center">
             <div className="flex flex-col items-center gap-4 mb-8 md:mb-0">
                 <FaPeopleGroup className="border-4 p-3 border-[var(--detail)] rounded-full h-32 w-32 bg-[var(--accent)] overflow-visible" />
-                <p className="text-center max-w-xs leading-tight">werken met mensen om een positieve sociale impact te maken.</p>
+                <p className="text-center max-w-xs leading-tight">Werken met mensen om een positieve sociale impact te maken.</p>
             </div>
             <div className="flex flex-col items-center gap-4 mb-8 md:mb-0">
                 <FaPaintBrush className="border-4 p-6 border-[var(--detail)] rounded-full h-32 w-32 bg-[var(--accent)] overflow-visible" />

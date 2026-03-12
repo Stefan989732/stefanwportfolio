@@ -51,7 +51,7 @@ export default function SkillsSection() {
       </SkillCard>
 
       <SkillCard title="Tools">
-        <SkillsItem icon={SiUnrealengine} label="Unity" />
+        <SkillsItem icon={SiUnrealengine} label="Unreal Engine" />
         <SkillsItem icon={FaUnity} label="Unity" />
         <SkillsItem icon={SiBlender } label="Blender" />
 

@@ -13,13 +13,13 @@ export default function PortfolioCard() {
                         De game laat studenten stap voor stap een medische handeling uitvoeren en geeft feedback bij fouten, zodat zij veilig en zelfstandig kunnen oefenen.
                     </>
                 }
-                details={["Opdrachtgever: HZ Verpleegkunde", "teamleden: 1", "duur: 8 weken"]}
+                details={["Opdrachtgever: HZ Verpleegkunde", "Duur: 8 weken"]}
                 type="Serious game"
                 tags={["Unity", "C#", "Figma"]}
                 learningPoints={[
                     "Tijdsmanagement",
                     "Communiceren met mensen die minder technisch zijn ingesteld",
-                    "precies werken om iets zo accuraat mogelijk te krijgen",
+                    "Precies werken om iets zo accuraat mogelijk te krijgen",
                     "Samenwerking met verschillende leeftijdsgroepen"
                 ]}
             />
@@ -33,7 +33,7 @@ export default function PortfolioCard() {
                         De website is opgebouwd met herbruikbare componenten en responsive design, gebaseerd op een vooraf gemaakt design in Figma.
                     </>
                 }
-                details={["Eigen project", "teamleden: 1", "duur: 2 weken"]}
+                details={["Persoonlijk project", "Duur: 2 weken"]}
                 type="Website"
                 tags={["NextJS", "Tailwind", "Figma"]}
                 learningPoints={["Goed nadenken over het design op zowel pc als telefoon", "NextJS maakt veel gebruik van components om duplicatie tegen te gaan"]}
@@ -48,10 +48,10 @@ export default function PortfolioCard() {
                         <br /><br />
                         Ik ontwikkelde functionaliteiten, verbeterde bestaande code en werkte volgens een Agile workflow met code reviews om een stabiele interne applicatie te bouwen.
                     </>}
-                details={["Opdrachtgever: Enovation Service & Support", "teamleden: 1", "duur: 8 weken"]}
+                details={["Opdrachtgever: Enovation Service & Support", "Duur: 8 weken"]}
                 type="Website"
                 tags={["PHP", "SCSS", "Figma"]}
-                learningPoints={["Goed communiceren tijdens design fase", "code qualiteit bewaren met code reviews", "Agile goed navolgen met een professioneel team",
+                learningPoints={["Goed communiceren tijdens design fase", "Code kwaliteit bewaren met code reviews", "Agile goed navolgen met een professioneel team",
                     "Werken met SCSS"
                 ]}
             />
@@ -65,7 +65,7 @@ export default function PortfolioCard() {
                         De applicatie is gebouwd met Laravel en JavaScript en ontworpen in Figma om projectdata duidelijk en toegankelijk te visualiseren.
                     </>
                 }
-                details={["Opdrachtgever: Emergis", "teamleden: 5", "duur: 8 weken"]}
+                details={["Opdrachtgever: Emergis", "Teamleden: 5", "Duur: 8 weken"]}
                 type="Website"
                 tags={["PHP", "Laravel", "CSS", "Javascript", "Figma"]}
                 learningPoints={["Samenwerking met een niet ICT-bedrijf", "Feedback snel en efficient verwerken", "Figma designs gebruiken ter onderbouwing van uitleg"]}
@@ -82,7 +82,7 @@ export default function PortfolioCard() {
                         De omgeving is gebouwd in Unity met 3D modellen uit Blender en laat gebruikers historische locaties virtueel verkennen.
                     </>
                 }
-                details={["Opdrachtgever: Muzeeum Vlissingen", "teamleden: 5", "duur: 8 weken"]}
+                details={["Opdrachtgever: Muzeeum Vlissingen", "Teamleden: 5", "Duur: 8 weken"]}
                 type="Serious game"
                 tags={["Unity", "C#", "Blender", "Figma"]}
                 learningPoints={["Samenwerking tussen Blender en Unity", "Geschiedenis combineren met ICT"]}
@@ -97,7 +97,7 @@ export default function PortfolioCard() {
                         De applicatie helpt docenten inzicht te krijgen in hoe onderwijsprojecten bijdragen aan de verschillende SDG-doelen.
                     </>
                 }
-                details={["Opdrachtgever: HZ University of Applied Sciences", "teamleden: 5", "duur: 8 weken"]}
+                details={["Opdrachtgever: HZ University of Applied Sciences", "Teamleden: 5", "Duur: 8 weken"]}
                 type="Website"
                 tags={["PHP", "Laravel", "CSS"]}
                 learningPoints={["Hanteren van de SDG & HZ styling regels", "Goed in beeld houden wie de doelgroep is van het project"]}
@@ -117,7 +117,7 @@ export default function PortfolioCard() {
                         Met Vue.js implementeerde ik een systeem dat gebruikers vooraf waarschuwt en de mogelijkheid geeft hun sessie te verlengen.
                     </>
                 }
-                details={["Opdrachtgever: HZ University of Applied Sciences", "teamleden: 1", "duur: 2 weken"]}
+                details={["Opdrachtgever: HZ University of Applied Sciences", "Duur: 2 weken"]}
                 type="Webapplicatie"
                 tags={["Vue.js"]}
                 learningPoints={["Werken met Vue.js", "Bestaande code van een applicatie analyseren"]}
@@ -132,7 +132,7 @@ export default function PortfolioCard() {
                         Mijn rol lag voornamelijk bij het ontwerpen en modelleren van 3D assets in Blender die in de Unity game werden gebruikt.
                     </>
                 }
-                details={["Minor opdracht", "teamleden: 8", "duur: 8 weken"]}
+                details={["Minor opdracht", "Teamleden: 8", "Duur: 8 weken"]}
                 type="Game"
                 tags={["Unity", "Blender", "Krita"]}
                 learningPoints={["Werken in Blender", "Werken in een team met verschillende specialiteiten"]}
@@ -148,7 +148,7 @@ export default function PortfolioCard() {
                         De game is een platformer waarin spelers door vragen over online veiligheid correct te beantwoorden nieuwe levels kunnen bereiken.
                     </>
                 }
-                details={["Opdrachtgever: basisschool IKC Regenboog", "teamleden: 5", "duur: 4 weken"]}
+                details={["Opdrachtgever: basisschool IKC Regenboog", "Teamleden: 5", "Duur: 4 weken"]}
                 type="Serious game"
                 tags={["Unity", "C#"]}
                 learningPoints={["Werken in Unity", "Gebruiken van prototypes om de kinderen te laten zien"]}
@@ -165,7 +165,7 @@ export default function PortfolioCard() {
                         De game is een interactieve visual novel waarin spelers keuzes maken en de gevolgen van cyberpesten ervaren.
                     </>
                 }
-                details={["Opdrachtgever: HZ University of Applied Sciences", "teamleden: 2", "duur: 2 weken"]}
+                details={["Opdrachtgever: HZ University of Applied Sciences", "Teamleden: 2", "Duur: 2 weken"]}
                 type="Serious game"
                 tags={["Unreal Engine", "C++"]}
                 learningPoints={["Werken in Unreal Engine", "Nadenken over de doeleindes van een serious game"]}

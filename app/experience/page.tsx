@@ -8,7 +8,6 @@ export default function Experience() {
     return (
         <div className="px-4 md:px-6 text-[var(--text-primary)] flex flex-col items-center gap-10">
 
-            {/* WORK EXPERIENCE */}
             <section className="bg-[var(--surface)] w-full max-w-6xl rounded-xl shadow-xl border-2 border-t-4 border-[var(--accent)] py-8 md:py-12 px-6 md:px-10">
                 <div className="max-w-5xl mx-auto">
 
@@ -18,16 +17,14 @@ export default function Experience() {
                         </h2>
                     </div>
 
-                    {/* Timeline - MOBIEL GEFIXT */}
                     <div className="relative pl-8 md:pl-12 space-y-12">
                         <div className="absolute left-2 md:left-4 top-0 h-full w-1 bg-[var(--accent)] rounded" />
 
-                        {/* Coderdojo */}
                         <div className="relative flex items-start gap-4">
                             <div className="absolute -left-8 md:-left-10 top-6 w-5 h-5 bg-[var(--foreground)] rounded-full border-4 border-white shadow-md flex-shrink-0" />
                             <div className="bg-[var(--surface)] rounded-xl shadow-lg p-6 md:p-8 border-2 border-l-4 border-[var(--accent)] flex-1">
                                 <h3 className="text-xl md:text-2xl font-semibold mb-2">
-                                    Vrijwilligerswerk — <p className="text-[var(--foreground)] inline">Coderdojo</p>
+                                    Vrijwilligerswerk — <p className="text-[var(--foreground)] inline">CoderDojo</p>
                                 </h3>
                                 <p className="text-[var(--text-secondary)]">
                                     <CiCalendar className="inline" /> nov 2021 - heden
@@ -36,7 +33,7 @@ export default function Experience() {
                                     <CiLocationOn className="inline" /> Bergen op Zoom, Nederland
                                 </p>
                                 <p className="mb-4">
-                                    Tijdens de Coderdojo help ik kinderen met het leren van programmeren.
+                                    Tijdens de CoderDojo help ik kinderen met het leren van programmeren.
                                     Samen met andere vrijwilligers begeleiden we de kinderen bij hun eerste
                                     stappen in software development.
                                 </p>
@@ -50,7 +47,6 @@ export default function Experience() {
                             </div>
                         </div>
 
-                        {/* JRCZ */}
                         <div className="relative flex items-start gap-4">
                             <div className="absolute -left-8 md:-left-10 top-6 w-5 h-5 bg-[var(--foreground)] rounded-full border-4 border-white shadow-md flex-shrink-0" />
                             <div className="bg-[var(--surface)] rounded-xl shadow-lg p-6 md:p-8 border-2 border-l-4 border-[var(--accent)] flex-1">
@@ -79,12 +75,11 @@ export default function Experience() {
                             </div>
                         </div>
 
-                        {/* Enovation */}
                         <div className="relative flex items-start gap-4">
                             <div className="absolute -left-8 md:-left-10 top-6 w-5 h-5 bg-[var(--foreground)] rounded-full border-4 border-white shadow-md" />
                             <div className="bg-[var(--surface)] rounded-xl shadow-lg p-6 md:p-8 border-2 border-l-4 border-[var(--accent)] flex-1">
                                 <h3 className="text-xl md:text-2xl font-semibold mb-2">
-                                    Stagiair — <p  className="text-[var(--foreground)] inline">Enovation</p>
+                                    Stagiair — <p className="text-[var(--foreground)] inline">Enovation</p>
                                 </h3>
                                 <p className="text-[var(--text-secondary)]">
                                     <CiCalendar className="inline" /> feb 2023 - jul 2023
@@ -110,7 +105,6 @@ export default function Experience() {
                 </div>
             </section>
 
-            {/* EDUCATION */}
             <section className="bg-[var(--surface)] w-full max-w-6xl rounded-xl shadow-xl border-2 border-t-4 border-[var(--accent)] py-8 md:py-12 px-6 md:px-10">
                 <div className="flex items-center gap-4 mb-10 border-b-4 border-[var(--accent)]">
                     <h2 className="text-3xl md:text-4xl font-semibold pb-4">
@@ -127,7 +121,7 @@ export default function Experience() {
                             <CiCalendar className="inline" /> feb 2020 - jul 2024
                         </p>
                         <p className="text-[var(--text-secondary)] mb-4">
-                            <CiLocationOn className="inline" /> Middelburg
+                            <CiLocationOn className="inline" /> Middelburg, Nederland
                         </p>
                         <div className="grid grid-cols-2 gap-2">
                             <div><GoDotFill className="inline text-[var(--foreground)]" /> Agile werken</div>
@@ -145,7 +139,7 @@ export default function Experience() {
                             <CiCalendar className="inline" /> aug 2018 - feb 2019
                         </p>
                         <p className="text-[var(--text-secondary)] mb-4">
-                            <CiLocationOn className="inline" /> Vlissingen
+                            <CiLocationOn className="inline" /> Vlissingen, Nederland
                         </p>
                         <div className="grid grid-cols-2 gap-2">
                             <div><GoDotFill className="inline text-[var(--foreground)]" /> Luisteren</div>
@@ -156,7 +150,6 @@ export default function Experience() {
                     </div>
                 </div>
 
-                {/* OTHER EXPERIENCE */}
                 <div className="mt-14 border-b-4 border-[var(--accent)] mb-8">
                     <h2 className="text-3xl md:text-4xl font-semibold pb-4">
                         Overige ervaring
@@ -176,9 +169,13 @@ export default function Experience() {
                                 <CiLocationOn className="inline" /> Thuis
                             </p>
                             <p>
-                                Ik ben bijna tien jaar mantelzorger geweest voor mijn moeder,
-                                waarbij ik vooral mentale ondersteuning en hulp in het dagelijks
-                                leven heb geboden.
+                                Ik ben bijna tien jaar mantelzorger geweest voor mijn moeder.
+                                In die periode heb ik haar vooral ondersteund op mentaal vlak en geholpen met verschillende aspecten van het dagelijks leven.
+                                Ik was er om naar haar te luisteren, met haar mee te denken en haar te helpen omgaan met moeilijke momenten.
+                                <br /><br />
+
+                                Deze ervaring heeft mij gevormd als persoon en heeft mijn empathie,
+                                doorzettingsvermogen en vermogen om anderen te ondersteunen verder versterkt.
                             </p>
                         </div>
 

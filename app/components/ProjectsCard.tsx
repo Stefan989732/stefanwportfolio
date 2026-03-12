@@ -21,7 +21,7 @@ export default function ProjectsSection() {
         title="Enovation"
         image="/Placeholder.jpg"
         href="/projects"
-        description="tool ontwikkeld voor de Service & Support team van het bedrijf."
+        description="Tool ontwikkeld voor de Service & Support team van het bedrijf."
       />
 
     </section>
